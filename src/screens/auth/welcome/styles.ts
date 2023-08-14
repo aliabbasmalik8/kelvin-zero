@@ -48,4 +48,8 @@ export const styles = StyleSheet.create({
     width: '90%',
     textAlign: 'center',
   },
+  buttonContainer: {
+    paddingHorizontal: 20,
+    width: '100%',
+  },
 });

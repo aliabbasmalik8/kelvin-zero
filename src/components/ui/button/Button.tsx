@@ -10,6 +10,7 @@ const Button: FC<IButtonProps> = ({title, onPress}) => {
       containerStyle={styles.containerStyle}
       title={title}
       onPress={onPress}
+      titleStyle={styles.titleStyle}
     />
   );
 };

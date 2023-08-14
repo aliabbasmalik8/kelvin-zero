@@ -29,7 +29,9 @@ const Welcome: FC<IWelcomeProps> = ({navigation}) => {
           Streamline your personal finance with user-friendly features and
           robust security
         </Text>
-        <Button title="Get Started" onPress={navigateToLogin} />
+        <View style={styles.buttonContainer}>
+          <Button title="Get Started" onPress={navigateToLogin} />
+        </View>
       </View>
     </View>
   );
