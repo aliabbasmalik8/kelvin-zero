@@ -10,30 +10,36 @@ export const styles = StyleSheet.create({
     height: '100%',
   },
   textContainer: {
-    marginHorizontal: 20,
+    marginHorizontal: 9,
   },
   mainText: {
-    fontSize: 38,
+    fontSize: 32,
     fontWeight: 'bold',
     marginBottom: 20,
+    lineHeight: 43,
   },
   subText: {
     fontSize: 12,
-    fontWeight: '200',
-
-    marginBottom: 24,
-    textAlign: 'center',
+    marginBottom: 12,
+    color: '#A5A5A5',
+    lineHeight: 16,
   },
   loginContainer: {
     marginTop: 30,
   },
+  loginButton: {
+    marginHorizontal: 10,
+  },
+  checkBoxCont: {
+    marginTop: 16,
+  },
   dividerContainer: {
-    marginTop: 90,
+    marginTop: 118,
   },
   altLoginCont: {
     display: 'flex',
     alignItems: 'center',
-    marginTop: 60,
+    marginTop: 43,
     width: '100%',
   },
   altLogin: {
@@ -45,30 +51,60 @@ export const styles = StyleSheet.create({
     width: '65%',
   },
   bottomContainer: {
-    marginTop: 70,
+    marginTop: 45,
     textAlign: 'center',
   },
   bottomMainText: {
-    fontSize: 14,
-    fontWeight: '200',
+    fontSize: 12,
     textAlign: 'center',
+    color: '#A5A5A5',
+    fontWeight: '500',
   },
   signUpTextCont: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
-    marginTop: 20,
+    alignItems: 'center',
+    marginTop: 24,
   },
   signUpText: {
     color: '#1F1F1F',
-    fontWeight: 'bold',
+    fontSize: 12,
+    fontWeight: '500',
   },
   highlightedText: {
     color: '#1F1F1F',
-    fontWeight: 'bold',
+    fontSize: 12,
+    fontWeight: '500',
   },
   signupButton: {
     color: '#2A61EE',
     marginLeft: 5,
+  },
+  bottomSheetContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    height: 500,
+  },
+  bottomSheetTextCont: {
+    width: '70%',
+  },
+  bottomSheetmainText: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    marginBottom: 8,
+    lineHeight: 43,
+    textAlign: 'center',
+  },
+  bottomSheetSubText: {
+    fontSize: 12,
+    color: '#A5A5A5',
+    lineHeight: 16,
+    textAlign: 'center',
+  },
+  backToHomeButton: {
+    width: '100%',
+    marginTop: 40,
   },
 });

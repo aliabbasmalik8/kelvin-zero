@@ -9,10 +9,7 @@ const Checkbox: FC<ICheckboxProps> = ({title}) => {
     <RNECheckbox
       checked={checked}
       onPress={toggleCheckbox}
-      //   iconType="material-community"
-      //   checkedIcon="checkbox-marked"
-      //   uncheckedIcon="checkbox-blank-outline"
-      //   checkedColor="red"
+      titleProps={{style: {color: '#A5A5A5', fontSize: 12}}}
       title={title}
     />
   );

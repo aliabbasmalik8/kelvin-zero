@@ -8,31 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* Kelvin_ZeroTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Kelvin_ZeroTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-Kelvin_Zero.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-Kelvin_Zero.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-Kelvin_Zero-Kelvin_ZeroTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Kelvin_Zero-Kelvin_ZeroTests.a */; };
+		1A855647252840A2984D3FB8 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 762068A7FBF94CCF8ABE1654 /* Poppins-SemiBold.ttf */; };
+		1E86D5B4AA0A4C409579C84D /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAFF4EA64A6840F8B56326BF /* Poppins-ExtraLightItalic.ttf */; };
+		2408AD3CFB00475D8510571B /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5D5F42C163447FBF3076E9 /* Poppins-SemiBoldItalic.ttf */; };
+		31C93799DE3D40E28B09E967 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 174E1FDBFA56419BB0E3FBF9 /* Poppins-ExtraBold.ttf */; };
+		404DC5C73E544B8B986335DB /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6BDC89C091F43A3A0D9EB90 /* Poppins-BlackItalic.ttf */; };
+		469B8B1663AC4A29B98E58B2 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BB091DBE3A5404B9D519420 /* Poppins-Light.ttf */; };
+		5723752B1C38487198853939 /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3D5DB49D630445FFB2D4761B /* Poppins-Italic.ttf */; };
+		62AA040068954CFD88922B72 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64E6F7E509ED4AC8A2C60A91 /* Poppins-Bold.ttf */; };
+		68FE0091E0534972B88BEED9 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C8C126D3DDC46119C9FDD91 /* Poppins-BoldItalic.ttf */; };
+		6C6ED07AACDA4107AE1FD8F0 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67997E146A254E42AAB1ACB0 /* Poppins-Black.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		D70E96972A8A59A9000AF4F7 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96842A8A59A5000AF4F7 /* EvilIcons.ttf */; };
-		D70E96982A8A59A9000AF4F7 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96852A8A59A6000AF4F7 /* FontAwesome.ttf */; };
-		D70E96992A8A59A9000AF4F7 /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96862A8A59A6000AF4F7 /* FontAwesome6_Brands.ttf */; };
-		D70E969A2A8A59A9000AF4F7 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96872A8A59A6000AF4F7 /* MaterialCommunityIcons.ttf */; };
-		D70E969B2A8A59A9000AF4F7 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96882A8A59A6000AF4F7 /* MaterialIcons.ttf */; };
-		D70E969C2A8A59A9000AF4F7 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96892A8A59A6000AF4F7 /* FontAwesome5_Brands.ttf */; };
-		D70E969D2A8A59A9000AF4F7 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E968A2A8A59A7000AF4F7 /* Fontisto.ttf */; };
-		D70E969E2A8A59A9000AF4F7 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E968B2A8A59A7000AF4F7 /* Ionicons.ttf */; };
-		D70E969F2A8A59A9000AF4F7 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E968C2A8A59A7000AF4F7 /* Feather.ttf */; };
-		D70E96A02A8A59A9000AF4F7 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E968D2A8A59A7000AF4F7 /* FontAwesome5_Regular.ttf */; };
-		D70E96A12A8A59A9000AF4F7 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E968E2A8A59A7000AF4F7 /* Entypo.ttf */; };
-		D70E96A22A8A59A9000AF4F7 /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E968F2A8A59A8000AF4F7 /* FontAwesome6_Solid.ttf */; };
-		D70E96A32A8A59A9000AF4F7 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96902A8A59A8000AF4F7 /* FontAwesome5_Solid.ttf */; };
-		D70E96A42A8A59A9000AF4F7 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96912A8A59A8000AF4F7 /* AntDesign.ttf */; };
-		D70E96A52A8A59A9000AF4F7 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96922A8A59A8000AF4F7 /* Zocial.ttf */; };
-		D70E96A62A8A59A9000AF4F7 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96932A8A59A8000AF4F7 /* Foundation.ttf */; };
-		D70E96A72A8A59A9000AF4F7 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96942A8A59A8000AF4F7 /* Octicons.ttf */; };
-		D70E96A82A8A59A9000AF4F7 /* FontAwesome6_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96952A8A59A8000AF4F7 /* FontAwesome6_Regular.ttf */; };
-		D70E96A92A8A59A9000AF4F7 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D70E96962A8A59A9000AF4F7 /* SimpleLineIcons.ttf */; };
+		8CE051AFB9F244DDB19DB134 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75AAF93588164C5B8E3E5FC8 /* Poppins-ExtraBoldItalic.ttf */; };
+		97AF53737FF5CDB2435FE72F /* libPods-Kelvin_Zero.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F8F71595DCF2A756741E50 /* libPods-Kelvin_Zero.a */; };
+		A5BE7D8DC02346F39A323909 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 486719F7A7D5480BBDB709D9 /* Poppins-ExtraLight.ttf */; };
+		AFA98251A3B0409F9FA5550E /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2530187DE76643D086A68E75 /* Poppins-MediumItalic.ttf */; };
+		BF041E22BAF54A378AB3ABB0 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A83AEBB34A54DE085B61B5B /* Poppins-Regular.ttf */; };
+		C5FCEB53B68E482889F15546 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABB5E486A26C430FA5A56BC3 /* Poppins-Medium.ttf */; };
+		CE27FED0534C4D8A9F648BA0 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D00EB33C62974F2C906CF2F1 /* Poppins-LightItalic.ttf */; };
+		DFBE4062BA464C3590599FBD /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D47368E104248259A355BB7 /* Poppins-ThinItalic.ttf */; };
+		F3B65A9C07544865B9499547 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D894D58A5BB04E40AFE95D21 /* Poppins-Thin.ttf */; };
+		F67036274DF8A23AD5BA90C3 /* libPods-Kelvin_Zero-Kelvin_ZeroTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFBC83E496A2B83DD33ABDA3 /* libPods-Kelvin_Zero-Kelvin_ZeroTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,19 +48,36 @@
 		00E356EE1AD99517003FC87E /* Kelvin_ZeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kelvin_ZeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* Kelvin_ZeroTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kelvin_ZeroTests.m; sourceTree = "<group>"; };
+		0C8C126D3DDC46119C9FDD91 /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BoldItalic.ttf"; path = "../assets/fonts/Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Kelvin_Zero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kelvin_Zero.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Kelvin_Zero/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Kelvin_Zero/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Kelvin_Zero/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Kelvin_Zero/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Kelvin_Zero/main.m; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-Kelvin_Zero-Kelvin_ZeroTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kelvin_Zero-Kelvin_ZeroTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-Kelvin_Zero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kelvin_Zero.debug.xcconfig"; path = "Target Support Files/Pods-Kelvin_Zero/Pods-Kelvin_Zero.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-Kelvin_Zero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kelvin_Zero.release.xcconfig"; path = "Target Support Files/Pods-Kelvin_Zero/Pods-Kelvin_Zero.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-Kelvin_Zero-Kelvin_ZeroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kelvin_Zero-Kelvin_ZeroTests.debug.xcconfig"; path = "Target Support Files/Pods-Kelvin_Zero-Kelvin_ZeroTests/Pods-Kelvin_Zero-Kelvin_ZeroTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-Kelvin_Zero.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kelvin_Zero.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		174E1FDBFA56419BB0E3FBF9 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBold.ttf"; path = "../assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		1FFEAD158B9F98A8CFAB6613 /* Pods-Kelvin_Zero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kelvin_Zero.release.xcconfig"; path = "Target Support Files/Pods-Kelvin_Zero/Pods-Kelvin_Zero.release.xcconfig"; sourceTree = "<group>"; };
+		2530187DE76643D086A68E75 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-MediumItalic.ttf"; path = "../assets/fonts/Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		3A5D5F42C163447FBF3076E9 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBoldItalic.ttf"; path = "../assets/fonts/Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		3BB091DBE3A5404B9D519420 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
+		3D5DB49D630445FFB2D4761B /* Poppins-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Italic.ttf"; path = "../assets/fonts/Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		3DB217C9E9A4994198E2F36C /* Pods-Kelvin_Zero-Kelvin_ZeroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kelvin_Zero-Kelvin_ZeroTests.release.xcconfig"; path = "Target Support Files/Pods-Kelvin_Zero-Kelvin_ZeroTests/Pods-Kelvin_Zero-Kelvin_ZeroTests.release.xcconfig"; sourceTree = "<group>"; };
+		486719F7A7D5480BBDB709D9 /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		4A83AEBB34A54DE085B61B5B /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		52911FD3460B4314E720C7FB /* Pods-Kelvin_Zero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kelvin_Zero.debug.xcconfig"; path = "Target Support Files/Pods-Kelvin_Zero/Pods-Kelvin_Zero.debug.xcconfig"; sourceTree = "<group>"; };
+		60F8F71595DCF2A756741E50 /* libPods-Kelvin_Zero.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kelvin_Zero.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64E6F7E509ED4AC8A2C60A91 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		67997E146A254E42AAB1ACB0 /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
+		75AAF93588164C5B8E3E5FC8 /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBoldItalic.ttf"; path = "../assets/fonts/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		762068A7FBF94CCF8ABE1654 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Kelvin_Zero/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-Kelvin_Zero-Kelvin_ZeroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kelvin_Zero-Kelvin_ZeroTests.release.xcconfig"; path = "Target Support Files/Pods-Kelvin_Zero-Kelvin_ZeroTests/Pods-Kelvin_Zero-Kelvin_ZeroTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D47368E104248259A355BB7 /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ThinItalic.ttf"; path = "../assets/fonts/Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		AAFF4EA64A6840F8B56326BF /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLightItalic.ttf"; path = "../assets/fonts/Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		ABB5E486A26C430FA5A56BC3 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		C3E2320FB398020478FC92D4 /* Pods-Kelvin_Zero-Kelvin_ZeroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kelvin_Zero-Kelvin_ZeroTests.debug.xcconfig"; path = "Target Support Files/Pods-Kelvin_Zero-Kelvin_ZeroTests/Pods-Kelvin_Zero-Kelvin_ZeroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CFBC83E496A2B83DD33ABDA3 /* libPods-Kelvin_Zero-Kelvin_ZeroTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kelvin_Zero-Kelvin_ZeroTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00EB33C62974F2C906CF2F1 /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-LightItalic.ttf"; path = "../assets/fonts/Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		D6BDC89C091F43A3A0D9EB90 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-BlackItalic.ttf"; path = "../assets/fonts/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
 		D70E96842A8A59A5000AF4F7 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
 		D70E96852A8A59A6000AF4F7 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		D70E96862A8A59A6000AF4F7 /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Brands.ttf; sourceTree = "<group>"; };
@@ -81,6 +97,7 @@
 		D70E96942A8A59A8000AF4F7 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
 		D70E96952A8A59A8000AF4F7 /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome6_Regular.ttf; sourceTree = "<group>"; };
 		D70E96962A8A59A9000AF4F7 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		D894D58A5BB04E40AFE95D21 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -89,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-Kelvin_Zero-Kelvin_ZeroTests.a in Frameworks */,
+				F67036274DF8A23AD5BA90C3 /* libPods-Kelvin_Zero-Kelvin_ZeroTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-Kelvin_Zero.a in Frameworks */,
+				97AF53737FF5CDB2435FE72F /* libPods-Kelvin_Zero.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,10 +156,35 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-Kelvin_Zero.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-Kelvin_Zero-Kelvin_ZeroTests.a */,
+				60F8F71595DCF2A756741E50 /* libPods-Kelvin_Zero.a */,
+				CFBC83E496A2B83DD33ABDA3 /* libPods-Kelvin_Zero-Kelvin_ZeroTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		587F3F67100D4CBF9B28771C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67997E146A254E42AAB1ACB0 /* Poppins-Black.ttf */,
+				D6BDC89C091F43A3A0D9EB90 /* Poppins-BlackItalic.ttf */,
+				64E6F7E509ED4AC8A2C60A91 /* Poppins-Bold.ttf */,
+				0C8C126D3DDC46119C9FDD91 /* Poppins-BoldItalic.ttf */,
+				174E1FDBFA56419BB0E3FBF9 /* Poppins-ExtraBold.ttf */,
+				75AAF93588164C5B8E3E5FC8 /* Poppins-ExtraBoldItalic.ttf */,
+				486719F7A7D5480BBDB709D9 /* Poppins-ExtraLight.ttf */,
+				AAFF4EA64A6840F8B56326BF /* Poppins-ExtraLightItalic.ttf */,
+				3D5DB49D630445FFB2D4761B /* Poppins-Italic.ttf */,
+				3BB091DBE3A5404B9D519420 /* Poppins-Light.ttf */,
+				D00EB33C62974F2C906CF2F1 /* Poppins-LightItalic.ttf */,
+				ABB5E486A26C430FA5A56BC3 /* Poppins-Medium.ttf */,
+				2530187DE76643D086A68E75 /* Poppins-MediumItalic.ttf */,
+				4A83AEBB34A54DE085B61B5B /* Poppins-Regular.ttf */,
+				762068A7FBF94CCF8ABE1654 /* Poppins-SemiBold.ttf */,
+				3A5D5F42C163447FBF3076E9 /* Poppins-SemiBoldItalic.ttf */,
+				D894D58A5BB04E40AFE95D21 /* Poppins-Thin.ttf */,
+				8D47368E104248259A355BB7 /* Poppins-ThinItalic.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -161,6 +203,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				587F3F67100D4CBF9B28771C /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -179,10 +222,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-Kelvin_Zero.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-Kelvin_Zero.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-Kelvin_Zero-Kelvin_ZeroTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-Kelvin_Zero-Kelvin_ZeroTests.release.xcconfig */,
+				52911FD3460B4314E720C7FB /* Pods-Kelvin_Zero.debug.xcconfig */,
+				1FFEAD158B9F98A8CFAB6613 /* Pods-Kelvin_Zero.release.xcconfig */,
+				C3E2320FB398020478FC92D4 /* Pods-Kelvin_Zero-Kelvin_ZeroTests.debug.xcconfig */,
+				3DB217C9E9A4994198E2F36C /* Pods-Kelvin_Zero-Kelvin_ZeroTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -220,12 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "Kelvin_ZeroTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				A8DC16C6EDCAAD5AE62FE41B /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				DE5DC5A25665B20E7516318E /* [CP] Embed Pods Frameworks */,
+				D420C57D417A80CEED2B2113 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,14 +284,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Kelvin_Zero" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				739D1A17741AA2FA517E5F62 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				7AD7E33988463BACDF68D365 /* [CP] Embed Pods Frameworks */,
+				B3C0C4C39C414394C31A558F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -307,27 +350,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D70E96A32A8A59A9000AF4F7 /* FontAwesome5_Solid.ttf in Resources */,
-				D70E969E2A8A59A9000AF4F7 /* Ionicons.ttf in Resources */,
-				D70E969F2A8A59A9000AF4F7 /* Feather.ttf in Resources */,
-				D70E96A62A8A59A9000AF4F7 /* Foundation.ttf in Resources */,
-				D70E969D2A8A59A9000AF4F7 /* Fontisto.ttf in Resources */,
-				D70E96A92A8A59A9000AF4F7 /* SimpleLineIcons.ttf in Resources */,
-				D70E96992A8A59A9000AF4F7 /* FontAwesome6_Brands.ttf in Resources */,
-				D70E969C2A8A59A9000AF4F7 /* FontAwesome5_Brands.ttf in Resources */,
-				D70E96A42A8A59A9000AF4F7 /* AntDesign.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				D70E96A22A8A59A9000AF4F7 /* FontAwesome6_Solid.ttf in Resources */,
-				D70E96A02A8A59A9000AF4F7 /* FontAwesome5_Regular.ttf in Resources */,
-				D70E96A82A8A59A9000AF4F7 /* FontAwesome6_Regular.ttf in Resources */,
-				D70E96A12A8A59A9000AF4F7 /* Entypo.ttf in Resources */,
-				D70E96972A8A59A9000AF4F7 /* EvilIcons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				D70E969A2A8A59A9000AF4F7 /* MaterialCommunityIcons.ttf in Resources */,
-				D70E96982A8A59A9000AF4F7 /* FontAwesome.ttf in Resources */,
-				D70E96A72A8A59A9000AF4F7 /* Octicons.ttf in Resources */,
-				D70E96A52A8A59A9000AF4F7 /* Zocial.ttf in Resources */,
-				D70E969B2A8A59A9000AF4F7 /* MaterialIcons.ttf in Resources */,
+				6C6ED07AACDA4107AE1FD8F0 /* Poppins-Black.ttf in Resources */,
+				404DC5C73E544B8B986335DB /* Poppins-BlackItalic.ttf in Resources */,
+				62AA040068954CFD88922B72 /* Poppins-Bold.ttf in Resources */,
+				68FE0091E0534972B88BEED9 /* Poppins-BoldItalic.ttf in Resources */,
+				31C93799DE3D40E28B09E967 /* Poppins-ExtraBold.ttf in Resources */,
+				8CE051AFB9F244DDB19DB134 /* Poppins-ExtraBoldItalic.ttf in Resources */,
+				A5BE7D8DC02346F39A323909 /* Poppins-ExtraLight.ttf in Resources */,
+				1E86D5B4AA0A4C409579C84D /* Poppins-ExtraLightItalic.ttf in Resources */,
+				5723752B1C38487198853939 /* Poppins-Italic.ttf in Resources */,
+				469B8B1663AC4A29B98E58B2 /* Poppins-Light.ttf in Resources */,
+				CE27FED0534C4D8A9F648BA0 /* Poppins-LightItalic.ttf in Resources */,
+				C5FCEB53B68E482889F15546 /* Poppins-Medium.ttf in Resources */,
+				AFA98251A3B0409F9FA5550E /* Poppins-MediumItalic.ttf in Resources */,
+				BF041E22BAF54A378AB3ABB0 /* Poppins-Regular.ttf in Resources */,
+				1A855647252840A2984D3FB8 /* Poppins-SemiBold.ttf in Resources */,
+				2408AD3CFB00475D8510571B /* Poppins-SemiBoldItalic.ttf in Resources */,
+				F3B65A9C07544865B9499547 /* Poppins-Thin.ttf in Resources */,
+				DFBE4062BA464C3590599FBD /* Poppins-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,46 +392,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero/Pods-Kelvin_Zero-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero/Pods-Kelvin_Zero-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero/Pods-Kelvin_Zero-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Kelvin_Zero-Kelvin_ZeroTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		739D1A17741AA2FA517E5F62 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,24 +414,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		7AD7E33988463BACDF68D365 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero-Kelvin_ZeroTests/Pods-Kelvin_Zero-Kelvin_ZeroTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero/Pods-Kelvin_Zero-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero-Kelvin_ZeroTests/Pods-Kelvin_Zero-Kelvin_ZeroTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero/Pods-Kelvin_Zero-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero-Kelvin_ZeroTests/Pods-Kelvin_Zero-Kelvin_ZeroTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero/Pods-Kelvin_Zero-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+		A8DC16C6EDCAAD5AE62FE41B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kelvin_Zero-Kelvin_ZeroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3C0C4C39C414394C31A558F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -445,7 +470,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero/Pods-Kelvin_Zero-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+		D420C57D417A80CEED2B2113 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -460,6 +485,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero-Kelvin_ZeroTests/Pods-Kelvin_Zero-Kelvin_ZeroTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE5DC5A25665B20E7516318E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero-Kelvin_ZeroTests/Pods-Kelvin_Zero-Kelvin_ZeroTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero-Kelvin_ZeroTests/Pods-Kelvin_Zero-Kelvin_ZeroTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kelvin_Zero-Kelvin_ZeroTests/Pods-Kelvin_Zero-Kelvin_ZeroTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -514,7 +556,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-Kelvin_Zero-Kelvin_ZeroTests.debug.xcconfig */;
+			baseConfigurationReference = C3E2320FB398020478FC92D4 /* Pods-Kelvin_Zero-Kelvin_ZeroTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -541,7 +583,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-Kelvin_Zero-Kelvin_ZeroTests.release.xcconfig */;
+			baseConfigurationReference = 3DB217C9E9A4994198E2F36C /* Pods-Kelvin_Zero-Kelvin_ZeroTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -565,7 +607,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-Kelvin_Zero.debug.xcconfig */;
+			baseConfigurationReference = 52911FD3460B4314E720C7FB /* Pods-Kelvin_Zero.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -592,7 +634,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-Kelvin_Zero.release.xcconfig */;
+			baseConfigurationReference = 1FFEAD158B9F98A8CFAB6613 /* Pods-Kelvin_Zero.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -5,13 +5,13 @@ export const styles = StyleSheet.create({
     paddingVertical: 14,
     borderRadius: 50,
     fontWeight: 'bold',
+    height: 52,
   },
   containerStyle: {
     borderRadius: 50,
-    width: '100%',
   },
   titleStyle: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: '600',
   },
 });
