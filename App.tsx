@@ -7,14 +7,17 @@
 
 import React from 'react';
 
-import AuthNavigation from './src/navigation/auth/AuthNavigation';
 import {ThemeProvider} from '@rneui/themed';
 import {theme} from './src/theme';
+import {AuthProvider} from './src/context/AuthContext';
+import AppNavigator from './src/navigation/AppNavigator';
 
 function App(): JSX.Element {
   return (
     <ThemeProvider theme={theme}>
-      <AuthNavigation />
+      <AuthProvider>
+        <AppNavigator />
+      </AuthProvider>
     </ThemeProvider>
   );
 }

@@ -14,7 +14,8 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
     alignItems: 'center',
-    paddingHorizontal: 36,
+    paddingLeft: 28,
+    paddingRight: 39,
   },
   logoStyle: {
     width: 209,
@@ -27,6 +28,7 @@ export const styles = StyleSheet.create({
   backgroundStyle: {
     width: '100%',
     marginTop: 80,
+    height: '100%',
     position: 'absolute',
   },
   bottomContainer: {
@@ -35,17 +37,23 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   mainText: {
-    fontSize: 38,
-    fontWeight: 'bold',
+    fontSize: 36,
+    fontWeight: '600',
     textAlign: 'center',
-    marginBottom: 14,
+    marginBottom: 8,
     width: '70%',
+    lineHeight: 43,
   },
   subText: {
     fontSize: 12,
-    fontWeight: '200',
-    marginBottom: 14,
+    marginBottom: 21,
     width: '90%',
     textAlign: 'center',
+    color: '#A5A5A5',
+    lineHeight: 16,
+  },
+  buttonContainer: {
+    paddingHorizontal: 20,
+    width: '100%',
   },
 });

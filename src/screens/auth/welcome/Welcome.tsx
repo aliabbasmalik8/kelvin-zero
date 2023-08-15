@@ -6,18 +6,20 @@ import {styles} from './styles';
 
 import Logo from '~/assets/Logo.png';
 import Money from '~/assets/Money.png';
-import WelcomeBg from '~/assets/WelcomeBg.png';
+import BG from '~/assets/BG.png';
+
+// import WelcomeBg from '~/assets/WelcomeBg.png';
+// import WelcomeBg from '~/assets/svg/BG.svg';
 
 import {IWelcomeProps} from './WelcomeType';
 
 const Welcome: FC<IWelcomeProps> = ({navigation}) => {
   const navigateToLogin = () => {
-    console.log('Logi');
     navigation.navigate('Login');
   };
   return (
     <View style={styles.mainContainer}>
-      <Image source={WelcomeBg} style={styles.backgroundStyle} />
+      <Image source={BG} style={styles.backgroundStyle} />
       <View style={styles.flexContainer}>
         <Image source={Logo} style={styles.logoStyle} resizeMode="cover" />
         <Image source={Money} style={styles.moneyStyle} resizeMode="cover" />
@@ -29,7 +31,9 @@ const Welcome: FC<IWelcomeProps> = ({navigation}) => {
           Streamline your personal finance with user-friendly features and
           robust security
         </Text>
-        <Button title="Get Started" onPress={navigateToLogin} />
+        <View style={styles.buttonContainer}>
+          <Button title="Get Started" onPress={navigateToLogin} />
+        </View>
       </View>
     </View>
   );
