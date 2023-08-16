@@ -24,8 +24,8 @@ const Send = ({navigation}: any) => {
     beneficiary,
     isDialogVisible,
     amount,
-    filteredData,
-    filterTransactionItems,
+    filteredRecentData,
+    filterRecentTransactionItems,
     setStep,
     setBeneficiary,
     sendMoney,
@@ -40,7 +40,7 @@ const Send = ({navigation}: any) => {
         <View style={styles.topContainer}>
           <InputWithIcon
             placeholder="Find Phone No / Bank Account"
-            onChangeText={filterTransactionItems}
+            onChangeText={filterRecentTransactionItems}
           />
           <View style={styles.iconsContainer}>
             {iconData.map((item, index) => (
@@ -84,10 +84,10 @@ const Send = ({navigation}: any) => {
             <Text style={styles.transactionText}>Recent Transfers</Text>
           </View>
           <ScrollView>
-            {filteredData.map(item => (
+            {filteredRecentData?.map((item, index) => (
               <BeneficiaryItem
                 dark={false}
-                key={item.id}
+                key={index}
                 beneficiaryItem={item}
                 onPress={() => {
                   setStep(1);

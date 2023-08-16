@@ -1,40 +1,166 @@
-import {View, Text, ScrollView} from 'react-native';
+import {View, Text, ScrollView, TouchableOpacity, Image} from 'react-native';
 import React from 'react';
 import {styles} from './styles';
 import {BottomBase} from '@src/components/base/bottomBase';
 import {InputWithIcon} from '@src/components/base/inputWithIcon';
 import {BeneficiaryItem} from '@src/components/base/beneficiaryItem';
 import {IconButton} from '@src/components/ui/iconbutton';
+import {Input} from '@src/components/ui/input';
+import {Input as RNEInput} from '@rneui/themed';
+import DialogBox from '@src/components/base/dialogBox/DialogBox';
+
+import {Button} from '@src/components/ui/button';
+import Multipass from '@src/assets/Multipass.png';
+import LockImage from '@src/assets/LockImage.png';
 import AddIcon from '@src/assets/components/AddIcon';
 import useTransfer from '@src/hooks/useTransfer';
+import {Select} from '@src/components/ui/select';
 
 const SendToBank = ({navigation}: any) => {
-  const {transactionData} = useTransfer({navigation});
+  const {
+    walletAmount,
+    step,
+    beneficiary,
+    isDialogVisible,
+    amount,
+    filteredData,
+    setStep,
+    setBeneficiary,
+    sendMoney,
+    handleAmountChange,
+    handleSendMoneyToBeneficiary,
+    toggleDialogBox,
+    filterTransactionItems,
+  } = useTransfer({navigation});
+
   return (
     <View style={styles.mainContainer}>
-      <View style={styles.topContainer}>
-        <InputWithIcon placeholder="Search" />
-      </View>
-      <BottomBase>
-        <View style={styles.flexContainer}>
-          <Text style={styles.transactionText}>Bank Account</Text>
+      {step === 0 && (
+        <View style={styles.topContainer}>
+          <InputWithIcon
+            placeholder="Search"
+            onChangeText={filterTransactionItems}
+          />
         </View>
-        <ScrollView>
-          {transactionData.map(item => (
+      )}
+
+      {step > 0 && (
+        <View style={styles.topContainer}>
+          <Text style={styles.walletText}>Wallet Balance</Text>
+          <Text style={styles.walletAmount}>${walletAmount}</Text>
+          <View style={styles.iconsContainer}>
             <BeneficiaryItem
-              dark={false}
-              key={item.id}
-              beneficiaryItem={item}
-              onPress={() => {}}
+              dark={true}
+              beneficiaryItem={beneficiary}
+              onPress={() => {
+                setStep(0);
+                setBeneficiary('');
+              }}
             />
-          ))}
-        </ScrollView>
+            <TouchableOpacity
+              style={styles.editButton}
+              onPress={() => {
+                setStep(0);
+                setBeneficiary('');
+              }}>
+              <Text style={styles.editButtonText}>Edit</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      )}
+      {step === 0 && (
+        <BottomBase>
+          <View style={styles.flexContainer}>
+            <Text style={styles.transactionText}>Bank Account</Text>
+            <Select />
+          </View>
+          <ScrollView>
+            {filteredData.map((item, index) => (
+              <BeneficiaryItem
+                dark={false}
+                key={index}
+                beneficiaryItem={item}
+                onPress={() => {
+                  setStep(1);
+                  setBeneficiary(item);
+                }}
+              />
+            ))}
+          </ScrollView>
+        </BottomBase>
+      )}
+      {step === 1 && (
+        <BottomBase>
+          <View style={styles.sendContainer}>
+            <View>
+              <RNEInput
+                placeholder="$"
+                onChangeText={handleAmountChange}
+                containerStyle={styles.amountInput}
+                textAlign="center"
+                textContentType="telephoneNumber"
+                inputStyle={styles.amountInputStyle}
+                keyboardType="numeric"
+              />
+              <Input placeholder="Write your note here" textArea={true} />
+            </View>
+            <View>
+              <Button title="Send Money" onPress={sendMoney} />
+            </View>
+          </View>
+          <DialogBox
+            isVisible={isDialogVisible}
+            toggleDialog={toggleDialogBox}
+            amount={amount}
+            beneficiary={beneficiary.title}
+            onPressOk={handleSendMoneyToBeneficiary}
+            onPressCancel={toggleDialogBox}
+          />
+        </BottomBase>
+      )}
+      {step === 2 && (
+        <BottomBase>
+          <View style={styles.bottomSheetContainer}>
+            <Image source={Multipass} />
+            <View style={styles.bottomSheetTextCont}>
+              <Text style={styles.bottomSheetmainText}>
+                Validate with Multi-Pass
+              </Text>
+              <Text style={styles.bottomSheetSubText}>
+                Tap You card to validate the transaction
+              </Text>
+            </View>
+          </View>
+        </BottomBase>
+      )}
+      {step === 3 && (
+        <BottomBase>
+          <View style={styles.bottomSheetContainer}>
+            <Image source={LockImage} />
+            <View style={styles.bottomSheetTextCont}>
+              <Text style={styles.bottomSheetmainText}>Successfully Sent</Text>
+              <Text style={styles.bottomSheetSubText}>
+                Transaction Approved
+              </Text>
+            </View>
+            <Button
+              title="Back to Home"
+              style={styles.backToHomeButton}
+              onPress={() => {
+                setStep(0);
+                navigation.goBack();
+              }}
+            />
+          </View>
+        </BottomBase>
+      )}
+      {step === 0 && (
         <View style={styles.addButtonContainer}>
           <IconButton style={styles.addButton}>
             <AddIcon />
           </IconButton>
         </View>
-      </BottomBase>
+      )}
     </View>
   );
 };

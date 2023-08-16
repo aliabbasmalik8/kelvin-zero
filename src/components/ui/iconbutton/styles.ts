@@ -6,8 +6,6 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     fontWeight: 'bold',
     backgroundColor: '#414185',
-    // height: 40,
-    // width: 40,
   },
   containerStyle: {
     borderRadius: 50,

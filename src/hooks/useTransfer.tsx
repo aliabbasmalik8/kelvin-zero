@@ -1,29 +1,21 @@
-import av1 from '@src/assets/av1.png';
-import av2 from '@src/assets/av2.png';
-import av3 from '@src/assets/av3.png';
-import av4 from '@src/assets/av4.png';
-import av5 from '@src/assets/av5.png';
 import useWallet from './useWallet';
 import React, {useState, useEffect} from 'react';
 import ScanIcon from '@src/assets/components/ScanIcon';
 import SendToBankIcon from '@src/assets/components/SendToBankIcon';
 import SendToFriendIcon from '@src/assets/components/SendToFriendIcon';
+import useTransaction from './useTransaction';
+import {Beneficiary} from '@src/types/types';
 
 const useTransfer = ({navigation}: any) => {
-  const transactionData = [
-    {id: 0, title: 'Paul Smith', icon: av1, phone: '0852-1283-1919'},
-    {id: 1, title: 'John Mactavish', icon: av2, phone: '0852-1283-1919'},
-    {id: 2, title: 'Jasmin Toqi', icon: av3, phone: '0852-1283-1919'},
-    {id: 3, title: 'Mark Nolan', icon: av4, phone: '0852-1283-1919'},
-    {id: 4, title: 'Scott Martin', icon: av5, phone: '0852-1283-1919'},
-  ];
   const [step, setStep] = useState(0);
   const [beneficiary, setBeneficiary] = useState<any>();
   const [isDialogVisible, setDialogVisible] = useState<boolean>(false);
   const [amount, setAmount] = useState('');
-  const [filteredData, setFilteredData] = useState(transactionData);
-
   const {deductAmount, walletAmount} = useWallet();
+  const {beneficiaries, recentTransactions, newTransaction} = useTransaction();
+  const [filteredData, setFilteredData] = useState(beneficiaries);
+  const [filteredRecentData, setFilteredRecentData] =
+    useState(recentTransactions);
 
   const toggleDialogBox = () => {
     setDialogVisible(!isDialogVisible);
@@ -38,8 +30,12 @@ const useTransfer = ({navigation}: any) => {
 
   const handleSendMoneyToBeneficiary = () => {
     deductAmount(parseInt(amount));
+    newTransaction(beneficiary);
     setDialogVisible(false);
     setStep(2);
+  };
+  const handleAddNewTransaction = (item: Beneficiary) => {
+    newTransaction(item);
   };
 
   const iconData = [
@@ -71,11 +67,24 @@ const useTransfer = ({navigation}: any) => {
 
   const filterTransactionItems = (value: any) => {
     if (value === '') {
-      setFilteredData(transactionData);
+      setFilteredData(beneficiaries);
       return;
     }
-    const fil = transactionData.filter(item => item.title.includes(value));
+    const fil = beneficiaries.filter(item =>
+      item.title.toLowerCase().includes(value.toLowerCase()),
+    );
     setFilteredData(fil);
+  };
+
+  const filterRecentTransactionItems = (value: any) => {
+    if (value === '') {
+      setFilteredRecentData(recentTransactions);
+      return;
+    }
+    const fil = recentTransactions.filter(item =>
+      item.title.toLowerCase().includes(value.toLowerCase()),
+    );
+    setFilteredRecentData(fil);
   };
 
   useEffect(() => {
@@ -90,19 +99,23 @@ const useTransfer = ({navigation}: any) => {
     walletAmount,
     amount,
     iconData,
-    transactionData,
+    beneficiaries,
     beneficiary,
     step,
     isDialogVisible,
     filteredData,
+    recentTransactions,
+    filteredRecentData,
     setDialogVisible,
     filterTransactionItems,
+    handleAddNewTransaction,
     setStep,
     setBeneficiary,
     sendMoney,
     handleAmountChange,
     toggleDialogBox,
     handleSendMoneyToBeneficiary,
+    filterRecentTransactionItems,
   };
 };
 export default useTransfer;

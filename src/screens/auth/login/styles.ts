@@ -1,8 +1,15 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
 
 export const styles = StyleSheet.create({
   mainContainer: {
-    paddingTop: 110,
+    ...Platform.select({
+      ios: {
+        paddingTop: 110,
+      },
+      android: {
+        paddingTop: 70,
+      },
+    }),
     paddingHorizontal: 20,
     display: 'flex',
     flexDirection: 'column',
@@ -11,6 +18,9 @@ export const styles = StyleSheet.create({
   },
   textContainer: {
     marginHorizontal: 9,
+  },
+  inputContainer: {
+    marginBottom: 10,
   },
   mainText: {
     fontSize: 32,
@@ -66,6 +76,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 24,
+    paddingBottom: 100,
   },
   signUpText: {
     color: '#1F1F1F',

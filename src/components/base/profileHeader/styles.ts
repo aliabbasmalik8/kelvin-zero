@@ -1,11 +1,18 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
 export const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: '#242458',
-    paddingTop: 60,
+    ...Platform.select({
+      ios: {
+        paddingTop: 60,
+      },
+      android: {
+        paddingTop: 25,
+      },
+    }),
     paddingBottom: 20,
     paddingHorizontal: 18,
   },

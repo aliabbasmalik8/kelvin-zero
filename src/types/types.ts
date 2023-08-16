@@ -16,3 +16,5 @@ export type FunctionWithNoParam = () => void;
 export type ValueOf<T> = T[keyof T];
 
 export type NonUndefined<T> = T extends undefined ? never : T;
+
+export type Beneficiary = {id: number; title: string; phone: string; icon: any};
