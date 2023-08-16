@@ -85,7 +85,7 @@ export const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    height: 500,
+    height: 470,
   },
   bottomSheetTextCont: {
     width: '70%',

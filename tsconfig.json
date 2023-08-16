@@ -12,9 +12,10 @@
     "skipLibCheck": true,
     "target": "ESNext",
     "types": ["react-native"],
-    "baseUrl": "./",
+    "baseUrl": ".",                                      
     "paths": {
-      "@app/*": ["./app/*"],
-    }
+      "@src/*": ["src/*"],
+    },
+   
   }
 }
