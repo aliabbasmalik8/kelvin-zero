@@ -10,4 +10,6 @@ export interface IInputProps {
   style?: StyleProp;
   textArea?: boolean;
   onPress?: () => void;
+  onChange?: FunctionWithParam;
+  errorMessage?: string;
 }

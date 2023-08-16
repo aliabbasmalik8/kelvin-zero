@@ -12,14 +12,17 @@ import {theme} from './src/theme';
 import {AuthProvider} from './src/context/AuthContext';
 import {WalletProvider} from './src/context/WalletContext';
 import AppNavigator from './src/navigation/AppNavigator';
+import {TransactionProvider} from '@src/context/TransactionContext';
 
 function App(): JSX.Element {
   return (
     <ThemeProvider theme={theme}>
       <AuthProvider>
-        <WalletProvider>
-          <AppNavigator />
-        </WalletProvider>
+        <TransactionProvider>
+          <WalletProvider>
+            <AppNavigator />
+          </WalletProvider>
+        </TransactionProvider>
       </AuthProvider>
     </ThemeProvider>
   );

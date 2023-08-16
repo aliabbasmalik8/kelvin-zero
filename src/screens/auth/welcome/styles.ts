@@ -1,8 +1,15 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
 
 export const styles = StyleSheet.create({
   mainContainer: {
-    paddingTop: 90,
+    ...Platform.select({
+      ios: {
+        paddingTop: 90,
+      },
+      android: {
+        paddingTop: 35,
+      },
+    }),
     height: '95%',
     display: 'flex',
     flexDirection: 'column',
@@ -27,7 +34,15 @@ export const styles = StyleSheet.create({
   },
   backgroundStyle: {
     width: '100%',
-    marginTop: 80,
+    ...Platform.select({
+      ios: {
+        marginTop: 80,
+      },
+      android: {
+        paddingTop: 35,
+      },
+    }),
+
     height: '100%',
     position: 'absolute',
   },

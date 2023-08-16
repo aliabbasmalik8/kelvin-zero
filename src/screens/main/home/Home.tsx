@@ -35,7 +35,7 @@ const Home: FC<IHomeProps> = ({navigation}) => {
             <Text style={styles.seeAllButton}>See all</Text>
           </TouchableOpacity>
         </View>
-        <ScrollView>
+        <ScrollView style={styles.padding}>
           {transactionData.map(item => (
             <TransactionItem key={item.id} transactionItem={item} />
           ))}

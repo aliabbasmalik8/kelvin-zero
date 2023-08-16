@@ -1,10 +1,10 @@
 import {View, Image} from 'react-native';
 import React from 'react';
-import Avatar1 from '~/assets/Avatar1.png';
+import Avatar1 from '@src/assets/Avatar1.png';
 import {styles} from './styles';
 import {Text} from '../../ui/text';
-import {IconButton} from '../../ui/iconbutton';
-import NotificationIcon from '../../../assets/components/NotificationIcon';
+import {IconButton} from '@src/components/ui/iconbutton';
+import NotificationIcon from '@src/assets/components/NotificationIcon';
 
 const ProfileHeader = () => {
   return (

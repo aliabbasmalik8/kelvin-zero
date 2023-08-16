@@ -1,4 +1,4 @@
-import {Image, TouchableOpacity, View} from 'react-native';
+import {Image, ScrollView, TouchableOpacity, View} from 'react-native';
 import React, {FC, useState, useEffect} from 'react';
 import {ILoginProps} from './LoginType';
 import {Text} from '@src/components/ui/text';
@@ -19,7 +19,25 @@ const Login: FC<ILoginProps> = ({}) => {
   const [isVisble, setIsVisible] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [email, setEmail] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
   const {login} = useAuth();
+  const handleEmailChange = (value: any) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^\d{10,}$/;
+    if (value === '') {
+      setEmail(value);
+      setErrorMessage('');
+      return;
+    }
+    setEmail(value);
+
+    if (!emailRegex.test(value) && !phoneRegex.test(value)) {
+      setErrorMessage('Invalid email or phone format');
+    } else {
+      setErrorMessage('');
+    }
+  };
 
   const handleLogin = () => {
     login(email);
@@ -28,11 +46,11 @@ const Login: FC<ILoginProps> = ({}) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoggedIn(true);
-    }, 3000);
+    }, 5000);
   }, [isVisble]);
 
   return (
-    <View style={styles.mainContainer}>
+    <ScrollView style={styles.mainContainer}>
       <View style={styles.textContainer}>
         <Text style={styles.mainText}>Welcome Back</Text>
         <Text style={styles.subText}>
@@ -42,11 +60,14 @@ const Login: FC<ILoginProps> = ({}) => {
       </View>
 
       <View style={styles.loginContainer}>
-        <Input
-          placeholder={'Email or Phone No.'}
-          value={email}
-          setValue={setEmail}
-        />
+        <View style={styles.inputContainer}>
+          <Input
+            placeholder={'Email or Phone No.'}
+            value={email}
+            onChange={handleEmailChange}
+            errorMessage={errorMessage}
+          />
+        </View>
         <Button
           title="Login with Multi-Pass"
           style={styles.loginButton}
@@ -116,7 +137,7 @@ const Login: FC<ILoginProps> = ({}) => {
           </View>
         )}
       </BottomSheet>
-    </View>
+    </ScrollView>
   );
 };
 

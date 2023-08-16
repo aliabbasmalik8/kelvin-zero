@@ -61,4 +61,7 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#1F1F1F',
   },
+  padding: {
+    paddingBottom: 200,
+  },
 });

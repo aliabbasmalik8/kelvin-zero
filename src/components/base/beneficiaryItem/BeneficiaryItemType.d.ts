@@ -1,10 +1,7 @@
+import {Beneficiary} from '@src/types/types';
+
 export interface IBeneficiaryItem {
-  beneficiaryItem: {
-    id: number;
-    icon: any;
-    title: string;
-    phone: string;
-  };
+  beneficiaryItem: Beneficiary;
   dark: boolean;
   onPress: () => void;
 }
