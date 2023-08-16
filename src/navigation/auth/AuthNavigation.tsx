@@ -1,8 +1,8 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Welcome from '../../screens/auth/welcome/Welcome';
-import Login from '../../screens/auth/login/Login';
+import Welcome from '@src/screens/auth/welcome/Welcome';
+import Login from '@src/screens/auth/login/Login';
 
 const Stack = createNativeStackNavigator();
 const AuthNavigation = () => {

@@ -1,15 +1,12 @@
 import {View, Image} from 'react-native';
 import React, {FC} from 'react';
-import {Button} from '../../../components/ui/button';
-import {Text} from '../../../components/ui/text';
+import {Button} from '@src/components/ui/button';
+import {Text} from '@src/components/ui/text';
 import {styles} from './styles';
 
-import Logo from '~/assets/Logo.png';
-import Money from '~/assets/Money.png';
-import BG from '~/assets/BG.png';
-
-// import WelcomeBg from '~/assets/WelcomeBg.png';
-// import WelcomeBg from '~/assets/svg/BG.svg';
+import Logo from '@src/assets/Logo.png';
+import Money from '@src/assets/Money.png';
+import BG from '@src/assets/BG.png';
 
 import {IWelcomeProps} from './WelcomeType';
 

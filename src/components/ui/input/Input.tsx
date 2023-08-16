@@ -3,17 +3,17 @@ import {Input as RNEInput} from '@rneui/themed';
 import {styles} from './styles';
 import {IInputProps} from './InputType';
 
-const Input: FC<IInputProps> = ({placeholder, value, setValue}) => {
+const Input: FC<IInputProps> = ({placeholder, value, setValue, textArea}) => {
   const handleChange = (val: any) => {
     setValue?.(val);
   };
   return (
     <RNEInput
       value={value}
-      inputContainerStyle={styles.inputContainer}
+      inputContainerStyle={[textArea && styles.textArea, styles.inputContainer]}
       inputStyle={styles.input}
       placeholder={placeholder}
-      onChange={handleChange}
+      onChangeText={handleChange}
     />
   );
 };

@@ -1,20 +1,19 @@
 import {Image, TouchableOpacity, View} from 'react-native';
 import React, {FC, useState, useEffect} from 'react';
 import {ILoginProps} from './LoginType';
-import {Text} from '../../../components/ui/text';
-import {Input} from '../../../components/ui/input';
-import {Button} from '../../../components/ui/button';
+import {Text} from '@src/components/ui/text';
+import {Input} from '@src/components/ui/input';
+import {Button} from '@src/components/ui/button';
 import {styles} from './styles';
-import {Checkbox} from '../../../components/ui/checkbox';
-import {Divider} from '../../../components/ui/divider';
-import {BottomSheet} from '../../../components/ui/bottomsheet';
-
-import Google from '~/assets/Google.png';
-import Apple from '~/assets/Apple.png';
-import Facebook from '~/assets/Facebook.png';
-import Multipass from '~/assets/Multipass.png';
-import LockImage from '~/assets/LockImage.png';
-import useAuth from '../../../hooks/useAuth';
+import {Checkbox} from '@src/components/ui/checkbox';
+import {Divider} from '@src/components/ui/divider';
+import {BottomSheet} from '@src/components/ui/bottomsheet';
+import Google from '@src/assets/Google.png';
+import Apple from '@src/assets/Apple.png';
+import Facebook from '@src/assets/Facebook.png';
+import Multipass from '@src/assets/Multipass.png';
+import LockImage from '@src/assets/LockImage.png';
+import useAuth from '@src/hooks/useAuth';
 
 const Login: FC<ILoginProps> = ({}) => {
   const [isVisble, setIsVisible] = useState(false);

@@ -1,80 +1,22 @@
 import {View, ScrollView, TouchableOpacity} from 'react-native';
 import React, {FC} from 'react';
-import {Text} from '../../../components/ui/text';
+import {Text} from '@src/components/ui/text';
 import {styles} from './styles';
-import {IconButton} from '../../../components/ui/iconbutton';
-import BottomBase from '../../../components/base/bottomBase/BottomBase';
-import {TransactionItem} from '../../../components/base/transactionItem';
-import Paypal from '../../../assets/Paypal.png';
-import Figma from '../../../assets/Figma.png';
-import Envato from '../../../assets/Envato.png';
-import Dribble from '../../../assets/Dribble.png';
+import {IconButton} from '@src/components/ui/iconbutton';
+import {BottomBase} from '@src/components/base/bottomBase';
+import {TransactionItem} from '@src/components/base/transactionItem';
 import {IHomeProps} from './HomeType';
+import useWallet from '@src/hooks/useWallet';
+import useHome from '@src/hooks/useHome';
 
-import AddIcon from '../../../assets/components/AddIcon';
-import SendMoneyIcon from '../../../assets/components/SendMoneyIcon';
-import RequestMoneyIcon from '../../../assets/components/RequestMoneyIcon';
-import ScanIcon from '../../../assets/components/ScanIcon';
-
-const transactionData = [
-  {id: 0, title: 'Paypal', icon: Paypal, amount: 243, date: 'Sun, 19 Feb 2023'},
-  {
-    id: 1,
-    title: 'Dribble',
-    icon: Dribble,
-    amount: -489,
-    date: 'Sun, 18 Feb 2023',
-  },
-  {id: 2, title: 'Figma', icon: Figma, amount: -128, date: 'Sun, 17 Feb 2023'},
-  {
-    id: 3,
-    title: 'Envato',
-    icon: Envato,
-    amount: 1000,
-    date: 'Sun, 17 Feb 2023',
-  },
-];
 const Home: FC<IHomeProps> = ({navigation}) => {
-  const iconData = [
-    {
-      id: 0,
-      title: 'Top Up',
-      icon: <AddIcon />,
-      onPress: () => {
-        navigation.navigate('Send');
-      },
-    },
-    {
-      id: 1,
-      title: 'Send',
-      icon: <SendMoneyIcon />,
-      onPress: () => {
-        navigation.navigate('Send');
-      },
-    },
-    {
-      id: 2,
-      title: 'Request',
-      icon: <RequestMoneyIcon />,
-      onPress: () => {
-        navigation.navigate('Send');
-      },
-    },
-    {
-      id: 4,
-      title: 'Scan',
-      icon: <ScanIcon />,
-      onPress: () => {
-        navigation.navigate('Send');
-      },
-    },
-  ];
-
+  const {walletAmount} = useWallet();
+  const {transactionData, iconData} = useHome({navigation});
   return (
     <View style={styles.mainContainer}>
       <View style={styles.topContainer}>
         <Text style={styles.walletText}>Wallet Balance</Text>
-        <Text style={styles.walletAmount}>$12,890</Text>
+        <Text style={styles.walletAmount}>${walletAmount}</Text>
         <View style={styles.iconsContainer}>
           {iconData.map((item, index) => (
             <View style={styles.icon} key={index}>
