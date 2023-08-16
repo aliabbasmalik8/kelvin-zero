@@ -165,7 +165,7 @@ const SendToFriend = ({navigation}: any) => {
               style={styles.backToHomeButton}
               onPress={() => {
                 setStep(0);
-                navigation.goBack();
+                navigation.navigate('Tabs');
               }}
             />
           </View>
