@@ -3,9 +3,7 @@ import React from 'react';
 import {styles} from './styles';
 import {BottomBase} from '@src/components/base/bottomBase';
 import {IconButton} from '@src/components/ui/iconbutton';
-
 import {InputWithIcon} from '@src/components/base/inputWithIcon';
-
 import {BeneficiaryItem} from '@src/components/base/beneficiaryItem';
 import {Input} from '@src/components/ui/input';
 import {Input as RNEInput} from '@rneui/themed';
@@ -26,6 +24,7 @@ const Send = ({navigation}: any) => {
     isDialogVisible,
     amount,
     filteredRecentData,
+    inputValue,
     filterRecentTransactionItems,
     setStep,
     setBeneficiary,
@@ -110,7 +109,7 @@ const Send = ({navigation}: any) => {
             <View>
               <RNEInput
                 placeholder="$"
-                value={`$${amount}`}
+                value={`${inputValue}`}
                 onChangeText={handleAmountChange}
                 containerStyle={styles.amountInput}
                 textAlign="center"
@@ -118,7 +117,11 @@ const Send = ({navigation}: any) => {
                 inputStyle={styles.amountInputStyle}
                 keyboardType="numeric"
               />
-              <Input placeholder="Write your note here" textArea={true} />
+              <Input
+                placeholder="Write your note here"
+                textArea={true}
+                multiline={true}
+              />
             </View>
             <View style={styles.sendButton}>
               <Button title="Send Money" onPress={sendMoney} />
@@ -129,7 +132,9 @@ const Send = ({navigation}: any) => {
             toggleDialog={toggleDialogBox}
             amount={amount}
             beneficiary={beneficiary.title}
-            onPressOk={handleSendMoneyToBeneficiary}
+            onPressOk={() => {
+              handleSendMoneyToBeneficiary();
+            }}
             onPressCancel={toggleDialogBox}
           />
         </BottomBase>
@@ -143,7 +148,7 @@ const Send = ({navigation}: any) => {
                 Validate with {'\n'}Multi-Pass
               </Text>
               <Text style={styles.bottomSheetSubText}>
-                Tap You card to validate {'\n'}the transaction
+                Tap your card to validate {'\n'}the transaction
               </Text>
             </View>
           </View>
@@ -154,7 +159,7 @@ const Send = ({navigation}: any) => {
           <View style={styles.bottomSheetContainer}>
             <Image style={styles.image} source={LockImage} />
             <View style={styles.bottomSheetTextCont}>
-              <Text style={styles.bottomSheetmainText}>Successfully Sent</Text>
+              <Text style={styles.bottomSheetmainText}>Successfully Sent!</Text>
               <Text style={styles.bottomSheetSubText}>
                 Transaction Approved
               </Text>

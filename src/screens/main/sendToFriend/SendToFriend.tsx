@@ -8,7 +8,6 @@ import {Input as RNEInput} from '@rneui/themed';
 import {Button} from '@src/components/ui/button';
 import DialogBox from '@src/components/base/dialogBox/DialogBox';
 import {Input} from '@src/components/ui/input';
-
 import Multipass from '@src/assets/Multipass.png';
 import LockImage from '@src/assets/LockImage.png';
 import useTransfer from '@src/hooks/useTransfer';
@@ -23,6 +22,7 @@ const SendToFriend = ({navigation}: any) => {
     amount,
     filteredData,
     recentTransactions,
+    inputValue,
     filterTransactionItems,
     setStep,
     setBeneficiary,
@@ -118,15 +118,19 @@ const SendToFriend = ({navigation}: any) => {
             <View>
               <RNEInput
                 placeholder="$"
+                value={`${inputValue}`}
                 onChangeText={handleAmountChange}
-                value={`$${amount}`}
                 containerStyle={styles.amountInput}
                 textAlign="center"
                 textContentType="telephoneNumber"
                 inputStyle={styles.amountInputStyle}
                 keyboardType="numeric"
               />
-              <Input placeholder="Write your note here" textArea={true} />
+              <Input
+                placeholder="Write your note here"
+                textArea={true}
+                multiline={true}
+              />
             </View>
             <View style={styles.sendButton}>
               <Button title="Send Money" onPress={sendMoney} />
@@ -151,7 +155,7 @@ const SendToFriend = ({navigation}: any) => {
                 Validate with {'\n'}Multi-Pass
               </Text>
               <Text style={styles.bottomSheetSubText}>
-                Tap You card to validate {'\n'}the transaction
+                Tap your card to validate {'\n'}the transaction
               </Text>
             </View>
           </View>
@@ -162,7 +166,7 @@ const SendToFriend = ({navigation}: any) => {
           <View style={styles.bottomSheetContainer}>
             <Image style={styles.image} source={LockImage} />
             <View style={styles.bottomSheetTextCont}>
-              <Text style={styles.bottomSheetmainText}>Successfully Sent</Text>
+              <Text style={styles.bottomSheetmainText}>Successfully Sent!</Text>
               <Text style={styles.bottomSheetSubText}>
                 Transaction Approved
               </Text>

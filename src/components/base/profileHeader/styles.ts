@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#242458',
     ...Platform.select({
       ios: {
-        paddingTop: 60,
+        paddingTop: 65,
       },
       android: {
         paddingTop: 55,

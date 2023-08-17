@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
   },
   dialogBody: {
-    marginTop: 16,
+    marginTop: 6,
     fontSize: 12,
     textAlign: 'center',
     width: '71%',
@@ -30,7 +30,6 @@ export const styles = StyleSheet.create({
     fontWeight: '500',
   },
   dialogActionContainer: {
-    marginTop: 32,
     width: '100%',
     display: 'flex',
     justifyContent: 'space-between',

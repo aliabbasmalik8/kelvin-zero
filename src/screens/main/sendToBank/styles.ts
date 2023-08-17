@@ -139,6 +139,6 @@ export const styles = StyleSheet.create({
     height: 73,
   },
   sendButton: {
-    marginTop: 100,
+    marginTop: 136,
   },
 });

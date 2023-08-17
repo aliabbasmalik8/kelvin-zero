@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
         paddingTop: 35,
       },
     }),
-    height: '92%',
+    height: '100%',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
@@ -36,7 +36,7 @@ export const styles = StyleSheet.create({
     width: '100%',
     ...Platform.select({
       ios: {
-        marginTop: 80,
+        marginTop: 50,
       },
       android: {
         paddingTop: 35,
@@ -71,5 +71,6 @@ export const styles = StyleSheet.create({
   buttonContainer: {
     paddingHorizontal: 20,
     width: '100%',
+    marginBottom: 70,
   },
 });

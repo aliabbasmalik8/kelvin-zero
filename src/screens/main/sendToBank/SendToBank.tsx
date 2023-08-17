@@ -25,6 +25,7 @@ const SendToBank = ({navigation}: any) => {
     isDialogVisible,
     amount,
     filteredData,
+    inputValue,
     setStep,
     setBeneficiary,
     sendMoney,
@@ -102,15 +103,20 @@ const SendToBank = ({navigation}: any) => {
             <View>
               <RNEInput
                 placeholder="$"
+                value={`${inputValue}`}
                 onChangeText={handleAmountChange}
-                value={`$${amount}`}
                 containerStyle={styles.amountInput}
                 textAlign="center"
                 textContentType="telephoneNumber"
                 inputStyle={styles.amountInputStyle}
                 keyboardType="numeric"
               />
-              <Input placeholder="Write your note here" textArea={true} />
+
+              <Input
+                placeholder="Write your note here"
+                textArea={true}
+                multiline={true}
+              />
             </View>
             <View style={styles.sendButton}>
               <Button title="Send Money" onPress={sendMoney} />
@@ -135,7 +141,7 @@ const SendToBank = ({navigation}: any) => {
                 Validate with {'\n'}Multi-Pass
               </Text>
               <Text style={styles.bottomSheetSubText}>
-                Tap You card to validate {'\n'}the transaction
+                Tap your card to validate {'\n'}the transaction
               </Text>
             </View>
           </View>

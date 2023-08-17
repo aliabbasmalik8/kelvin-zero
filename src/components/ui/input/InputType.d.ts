@@ -12,4 +12,5 @@ export interface IInputProps {
   onPress?: () => void;
   onChange?: FunctionWithParam;
   errorMessage?: string;
+  multiline?: boolean;
 }

@@ -19,8 +19,8 @@ const Tab = createBottomTabNavigator();
 const TabNavigator = () => {
   const screenIcons = {
     Home: HomeIcon,
-    Wallet: WalletIcon,
     Charts: ChartsIcon,
+    Wallet: WalletIcon,
     Profile: ProfileIcon,
   };
   return (
@@ -31,14 +31,15 @@ const TabNavigator = () => {
         component={Home}
         options={{header: () => <ProfileHeader />}}
       />
-      <Tab.Screen
-        name="Wallet"
-        component={Wallet}
-        options={{header: () => <ProfileHeader />}}
-      />
+
       <Tab.Screen
         name="Charts"
         component={Chart}
+        options={{header: () => <ProfileHeader />}}
+      />
+      <Tab.Screen
+        name="Wallet"
+        component={Wallet}
         options={{header: () => <ProfileHeader />}}
       />
       <Tab.Screen
