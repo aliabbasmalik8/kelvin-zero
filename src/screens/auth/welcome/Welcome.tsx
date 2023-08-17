@@ -23,7 +23,7 @@ const Welcome: FC<IWelcomeProps> = ({navigation}) => {
       </View>
 
       <View style={styles.bottomContainer}>
-        <Text style={styles.mainText}>Multi-Pass Functional App</Text>
+        <Text style={styles.mainText}>Multi-Pass Financial App</Text>
         <Text style={styles.subText}>
           Streamline your personal finance with user-friendly features and
           robust security

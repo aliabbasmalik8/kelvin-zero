@@ -9,6 +9,12 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 40,
   },
+  amountContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginTop: 8,
+    alignItems: 'baseline',
+  },
   walletText: {
     color: 'white',
     fontSize: 12,
@@ -19,7 +25,11 @@ export const styles = StyleSheet.create({
     color: 'white',
     fontSize: 48,
     fontWeight: '500',
-    marginTop: 8,
+  },
+  walletAmountDecimal: {
+    color: 'white',
+    fontSize: 24,
+    fontWeight: '500',
   },
   iconsContainer: {
     display: 'flex',

@@ -15,6 +15,7 @@ import DialogBox from '@src/components/base/dialogBox/DialogBox';
 import Multipass from '@src/assets/Multipass.png';
 import LockImage from '@src/assets/LockImage.png';
 import useTransfer from '@src/hooks/useTransfer';
+import {convertCurrency} from '@src/helpers/convertCurrency';
 
 const Send = ({navigation}: any) => {
   const {
@@ -34,12 +35,14 @@ const Send = ({navigation}: any) => {
     toggleDialogBox,
   } = useTransfer({navigation});
 
+  const formattedCurrency = convertCurrency(walletAmount);
+  const [integerPart, decimalPart] = formattedCurrency.split('.');
   return (
     <View style={styles.mainContainer}>
       {step === 0 && (
         <View style={styles.topContainer}>
           <InputWithIcon
-            placeholder="Find Phone No / Bank Account"
+            placeholder="Find Phone Number / Bank Account"
             onChangeText={filterRecentTransactionItems}
           />
           <View style={styles.iconsContainer}>
@@ -57,7 +60,10 @@ const Send = ({navigation}: any) => {
       {step > 0 && (
         <View style={styles.topContainer}>
           <Text style={styles.walletText}>Wallet Balance</Text>
-          <Text style={styles.walletAmount}>${walletAmount}</Text>
+          <View style={styles.amountContainer}>
+            <Text style={styles.walletAmount}>{integerPart}.</Text>
+            <Text style={styles.walletAmountDecimal}>{decimalPart}</Text>
+          </View>
           <View style={styles.iconsContainer}>
             <BeneficiaryItem
               dark={true}
@@ -104,6 +110,7 @@ const Send = ({navigation}: any) => {
             <View>
               <RNEInput
                 placeholder="$"
+                value={`$${amount}`}
                 onChangeText={handleAmountChange}
                 containerStyle={styles.amountInput}
                 textAlign="center"
@@ -113,7 +120,7 @@ const Send = ({navigation}: any) => {
               />
               <Input placeholder="Write your note here" textArea={true} />
             </View>
-            <View>
+            <View style={styles.sendButton}>
               <Button title="Send Money" onPress={sendMoney} />
             </View>
           </View>
@@ -130,13 +137,13 @@ const Send = ({navigation}: any) => {
       {step === 2 && (
         <BottomBase>
           <View style={styles.bottomSheetContainer}>
-            <Image source={Multipass} />
+            <Image style={styles.image} source={Multipass} />
             <View style={styles.bottomSheetTextCont}>
               <Text style={styles.bottomSheetmainText}>
-                Validate with Multi-Pass
+                Validate with {'\n'}Multi-Pass
               </Text>
               <Text style={styles.bottomSheetSubText}>
-                Tap You card to validate the transaction
+                Tap You card to validate {'\n'}the transaction
               </Text>
             </View>
           </View>
@@ -145,7 +152,7 @@ const Send = ({navigation}: any) => {
       {step === 3 && (
         <BottomBase>
           <View style={styles.bottomSheetContainer}>
-            <Image source={LockImage} />
+            <Image style={styles.image} source={LockImage} />
             <View style={styles.bottomSheetTextCont}>
               <Text style={styles.bottomSheetmainText}>Successfully Sent</Text>
               <Text style={styles.bottomSheetSubText}>

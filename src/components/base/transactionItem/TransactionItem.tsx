@@ -3,8 +3,11 @@ import React, {FC} from 'react';
 import {Text} from '../../ui/text';
 import {styles} from './styles';
 import {ITransactionItem} from './TransactionItemType';
+import {convertCurrency} from '@src/helpers/convertCurrency';
 
 const TransactionItem: FC<ITransactionItem> = ({transactionItem}) => {
+  const formattedCurrency = convertCurrency(transactionItem.amount);
+  const [integerPart, decimalPart] = formattedCurrency.split('.');
   return (
     <TouchableOpacity style={styles.mainContainer}>
       <View style={styles.subContainer}>
@@ -14,13 +17,22 @@ const TransactionItem: FC<ITransactionItem> = ({transactionItem}) => {
           <Text style={styles.dateText}>{transactionItem.date}</Text>
         </View>
       </View>
-      <Text
-        style={[
-          transactionItem.amount < 0 ? styles.red : styles.green,
-          styles.moneyText,
-        ]}>
-        $ {transactionItem.amount}
-      </Text>
+      <View style={styles.moneyContainer}>
+        <Text
+          style={[
+            transactionItem.amount < 0 ? styles.red : styles.green,
+            styles.moneyText,
+          ]}>
+          {integerPart}.
+        </Text>
+        <Text
+          style={[
+            transactionItem.amount < 0 ? styles.red : styles.green,
+            styles.decimalText,
+          ]}>
+          {decimalPart}
+        </Text>
+      </View>
     </TouchableOpacity>
   );
 };

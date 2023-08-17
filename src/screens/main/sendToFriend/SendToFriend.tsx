@@ -12,6 +12,7 @@ import {Input} from '@src/components/ui/input';
 import Multipass from '@src/assets/Multipass.png';
 import LockImage from '@src/assets/LockImage.png';
 import useTransfer from '@src/hooks/useTransfer';
+import {convertCurrency} from '@src/helpers/convertCurrency';
 
 const SendToFriend = ({navigation}: any) => {
   const {
@@ -37,13 +38,15 @@ const SendToFriend = ({navigation}: any) => {
     return `${firstName} ${lastNameInitial}.`;
   };
 
+  const formattedCurrency = convertCurrency(walletAmount);
+  const [integerPart, decimalPart] = formattedCurrency.split('.');
   return (
     <View style={styles.mainContainer}>
       {step === 0 && (
         <View>
           <View style={styles.topContainer}>
             <InputWithIcon
-              placeholder="Find Phone No. / Bank Account"
+              placeholder="Find Phone Number / Bank Account"
               onChangeText={filterTransactionItems}
             />
           </View>
@@ -65,7 +68,10 @@ const SendToFriend = ({navigation}: any) => {
       {step > 0 && (
         <View style={styles.topContainer}>
           <Text style={styles.walletText}>Wallet Balance</Text>
-          <Text style={styles.walletAmount}>${walletAmount}</Text>
+          <View style={styles.amountContainer}>
+            <Text style={styles.walletAmount}>{integerPart}.</Text>
+            <Text style={styles.walletAmountDecimal}>{decimalPart}</Text>
+          </View>
           <View style={styles.iconsContainer}>
             <BeneficiaryItem
               dark={true}
@@ -113,6 +119,7 @@ const SendToFriend = ({navigation}: any) => {
               <RNEInput
                 placeholder="$"
                 onChangeText={handleAmountChange}
+                value={`$${amount}`}
                 containerStyle={styles.amountInput}
                 textAlign="center"
                 textContentType="telephoneNumber"
@@ -121,7 +128,7 @@ const SendToFriend = ({navigation}: any) => {
               />
               <Input placeholder="Write your note here" textArea={true} />
             </View>
-            <View>
+            <View style={styles.sendButton}>
               <Button title="Send Money" onPress={sendMoney} />
             </View>
           </View>
@@ -138,13 +145,13 @@ const SendToFriend = ({navigation}: any) => {
       {step === 2 && (
         <BottomBase>
           <View style={styles.bottomSheetContainer}>
-            <Image source={Multipass} />
+            <Image style={styles.image} source={Multipass} />
             <View style={styles.bottomSheetTextCont}>
               <Text style={styles.bottomSheetmainText}>
-                Validate with Multi-Pass
+                Validate with {'\n'}Multi-Pass
               </Text>
               <Text style={styles.bottomSheetSubText}>
-                Tap You card to validate the transaction
+                Tap You card to validate {'\n'}the transaction
               </Text>
             </View>
           </View>
@@ -153,7 +160,7 @@ const SendToFriend = ({navigation}: any) => {
       {step === 3 && (
         <BottomBase>
           <View style={styles.bottomSheetContainer}>
-            <Image source={LockImage} />
+            <Image style={styles.image} source={LockImage} />
             <View style={styles.bottomSheetTextCont}>
               <Text style={styles.bottomSheetmainText}>Successfully Sent</Text>
               <Text style={styles.bottomSheetSubText}>

@@ -7,9 +7,9 @@ import {styles} from './styles';
 const Divider: FC<IDividerProps> = ({children}) => {
   return (
     <View style={styles.dividerContainer}>
-      <RNEDivider style={styles.divider} />
+      <RNEDivider style={styles.divider} width={1} />
       <Text style={styles.textStyle}>{children}</Text>
-      <RNEDivider style={styles.divider} />
+      <RNEDivider style={styles.divider} width={1} />
     </View>
   );
 };

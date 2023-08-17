@@ -25,14 +25,19 @@ const useTransfer = ({navigation}: any) => {
   };
 
   const handleAmountChange = (value: any) => {
-    setAmount(value);
+    const numericText = value.replace(/[^0-9]/g, '');
+    setAmount(numericText);
   };
 
   const handleSendMoneyToBeneficiary = () => {
     deductAmount(parseInt(amount));
     newTransaction(beneficiary);
     setDialogVisible(false);
-    setStep(2);
+    if (parseInt(amount) < 4000) {
+      setStep(3);
+    } else {
+      setStep(2);
+    }
   };
   const handleAddNewTransaction = (item: Beneficiary) => {
     newTransaction(item);

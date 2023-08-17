@@ -8,15 +8,21 @@ import {TransactionItem} from '@src/components/base/transactionItem';
 import {IHomeProps} from './HomeType';
 import useWallet from '@src/hooks/useWallet';
 import useHome from '@src/hooks/useHome';
+import {convertCurrency} from '@src/helpers/convertCurrency';
 
 const Home: FC<IHomeProps> = ({navigation}) => {
   const {walletAmount} = useWallet();
+  const formattedCurrency = convertCurrency(walletAmount);
+  const [integerPart, decimalPart] = formattedCurrency.split('.');
   const {transactionData, iconData} = useHome({navigation});
   return (
     <View style={styles.mainContainer}>
       <View style={styles.topContainer}>
         <Text style={styles.walletText}>Wallet Balance</Text>
-        <Text style={styles.walletAmount}>${walletAmount}</Text>
+        <View style={styles.amountContainer}>
+          <Text style={styles.walletAmount}>{integerPart}.</Text>
+          <Text style={styles.walletAmountDecimal}>{decimalPart}</Text>
+        </View>
         <View style={styles.iconsContainer}>
           {iconData.map((item, index) => (
             <View style={styles.icon} key={index}>

@@ -4,13 +4,13 @@ export const styles = StyleSheet.create({
   mainContainer: {
     ...Platform.select({
       ios: {
-        paddingTop: 90,
+        paddingTop: 70,
       },
       android: {
         paddingTop: 35,
       },
     }),
-    height: '95%',
+    height: '92%',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
@@ -53,11 +53,12 @@ export const styles = StyleSheet.create({
   },
   mainText: {
     fontSize: 36,
-    fontWeight: '600',
+    fontWeight: '700',
     textAlign: 'center',
     marginBottom: 8,
     width: '70%',
     lineHeight: 43,
+    color: '#1F1F1F',
   },
   subText: {
     fontSize: 12,

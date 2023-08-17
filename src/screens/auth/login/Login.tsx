@@ -8,12 +8,12 @@ import {styles} from './styles';
 import {Checkbox} from '@src/components/ui/checkbox';
 import {Divider} from '@src/components/ui/divider';
 import {BottomSheet} from '@src/components/ui/bottomsheet';
-import Google from '@src/assets/Google.png';
-import Apple from '@src/assets/Apple.png';
-import Facebook from '@src/assets/Facebook.png';
 import Multipass from '@src/assets/Multipass.png';
 import LockImage from '@src/assets/LockImage.png';
 import useAuth from '@src/hooks/useAuth';
+import GoogleIcon from '@src/assets/components/GoogleIcon';
+import FacebookIcon from '@src/assets/components/FacebookIcon';
+import AppleIcon from '@src/assets/components/AppleIcon';
 
 const Login: FC<ILoginProps> = ({}) => {
   const [isVisble, setIsVisible] = useState(false);
@@ -46,7 +46,7 @@ const Login: FC<ILoginProps> = ({}) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoggedIn(true);
-    }, 5000);
+    }, 7000);
   }, [isVisble]);
 
   return (
@@ -84,19 +84,20 @@ const Login: FC<ILoginProps> = ({}) => {
       </View>
       <View style={styles.altLoginCont}>
         <View style={styles.altLogin}>
-          <Image source={Google} />
-          <Image source={Apple} />
-          <Image source={Facebook} />
+          <GoogleIcon />
+          <FacebookIcon />
+          <AppleIcon />
         </View>
       </View>
       <View style={styles.bottomContainer}>
         <Text style={styles.bottomMainText}>
-          By logging, you agree to our{' '}
-          <Text style={styles.highlightedText}>Terms and Condition</Text> and{' '}
-          <Text style={styles.highlightedText}>Privacy Policy</Text>
+          By logging, you agree to our{'\n'}
+          <Text style={styles.highlightedText}>
+            Terms and Condition
+          </Text> and <Text style={styles.highlightedText}>Privacy Policy</Text>
         </Text>
         <View style={styles.signUpTextCont}>
-          <Text style={styles.signUpText}>Already have an account</Text>
+          <Text style={styles.signUpText}>Already have an account?</Text>
           <TouchableOpacity>
             <Text style={styles.signupButton}>Sign up</Text>
           </TouchableOpacity>
@@ -105,22 +106,22 @@ const Login: FC<ILoginProps> = ({}) => {
       <BottomSheet isVisible={isVisble} onClose={() => setIsVisible(false)}>
         {!isLoggedIn && (
           <View style={styles.bottomSheetContainer}>
-            <Image source={Multipass} />
+            <Image style={styles.image} source={Multipass} />
             <View style={styles.bottomSheetTextCont}>
               <Text style={styles.bottomSheetmainText}>
-                Login with Multi-Pass
+                Login with {'\n'} Multi-Pass
               </Text>
               <Text style={styles.bottomSheetSubText}>
-                Tap You card to validate the transaction
+                Tap You card to validate{'\n'} the transaction
               </Text>
             </View>
           </View>
         )}
         {isLoggedIn && (
           <View style={styles.bottomSheetContainer}>
-            <Image source={LockImage} />
+            <Image style={styles.image} source={LockImage} />
             <View style={styles.bottomSheetTextCont}>
-              <Text style={styles.bottomSheetmainText}>Login Succesfull</Text>
+              <Text style={styles.bottomSheetmainText}>Login Successful</Text>
               <Text style={styles.bottomSheetSubText}>
                 Transaction Approved
               </Text>

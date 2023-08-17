@@ -27,6 +27,12 @@ export const styles = StyleSheet.create({
     width: 73,
     height: 73,
   },
+  amountContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginTop: 8,
+    alignItems: 'baseline',
+  },
   walletText: {
     color: 'white',
     fontSize: 12,
@@ -39,10 +45,14 @@ export const styles = StyleSheet.create({
     fontWeight: '500',
     marginTop: 8,
   },
+  walletAmountDecimal: {
+    color: 'white',
+    fontSize: 24,
+    fontWeight: '500',
+  },
   iconText: {
     color: 'white',
     fontSize: 12,
-    marginTop: 8,
     fontWeight: '500',
   },
   flexContainer: {
@@ -92,17 +102,18 @@ export const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    height: 500,
+    height: 470,
   },
   bottomSheetTextCont: {
-    width: '70%',
+    width: '80%',
   },
   bottomSheetmainText: {
-    fontSize: 32,
-    fontWeight: 'bold',
+    fontSize: 24,
+    fontWeight: '500',
     marginBottom: 8,
     lineHeight: 43,
     textAlign: 'center',
+    color: '#1F1F1F',
   },
   bottomSheetSubText: {
     fontSize: 12,
@@ -110,9 +121,13 @@ export const styles = StyleSheet.create({
     lineHeight: 16,
     textAlign: 'center',
   },
+  image: {
+    width: 264,
+    height: 256,
+  },
   backToHomeButton: {
     width: '100%',
-    marginTop: 40,
+    marginTop: 70,
   },
   titleText: {color: 'white', fontSize: 12, marginTop: 8},
   friendsContainer: {
@@ -122,5 +137,8 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     width: '100%',
+  },
+  sendButton: {
+    marginTop: 100,
   },
 });
