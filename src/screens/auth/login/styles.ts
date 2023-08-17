@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
   },
   mainText: {
     fontSize: 32,
-    fontWeight: 'bold',
+    fontWeight: '600',
     marginBottom: 20,
     lineHeight: 43,
   },
@@ -33,6 +33,7 @@ export const styles = StyleSheet.create({
     marginBottom: 12,
     color: '#A5A5A5',
     lineHeight: 16,
+    width: '96%',
   },
   loginContainer: {
     marginTop: 30,
@@ -41,7 +42,7 @@ export const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   checkBoxCont: {
-    marginTop: 16,
+    marginTop: 14,
   },
   dividerContainer: {
     marginTop: 118,
@@ -63,6 +64,9 @@ export const styles = StyleSheet.create({
   bottomContainer: {
     marginTop: 45,
     textAlign: 'center',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   bottomMainText: {
     fontSize: 12,
@@ -91,6 +95,8 @@ export const styles = StyleSheet.create({
   signupButton: {
     color: '#2A61EE',
     marginLeft: 5,
+    fontWeight: '600',
+    fontSize: 12,
   },
   bottomSheetContainer: {
     display: 'flex',
@@ -99,14 +105,15 @@ export const styles = StyleSheet.create({
     height: 470,
   },
   bottomSheetTextCont: {
-    width: '70%',
+    width: '80%',
   },
   bottomSheetmainText: {
-    fontSize: 32,
-    fontWeight: 'bold',
+    fontSize: 24,
+    fontWeight: '500',
     marginBottom: 8,
     lineHeight: 43,
     textAlign: 'center',
+    color: '#1F1F1F',
   },
   bottomSheetSubText: {
     fontSize: 12,
@@ -114,8 +121,12 @@ export const styles = StyleSheet.create({
     lineHeight: 16,
     textAlign: 'center',
   },
+  image: {
+    width: 264,
+    height: 256,
+  },
   backToHomeButton: {
     width: '100%',
-    marginTop: 40,
+    marginTop: 50,
   },
 });

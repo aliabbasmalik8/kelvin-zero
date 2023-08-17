@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
   },
   input: {
     fontSize: 14,
+    color: '#787878',
   },
   textArea: {
     height: 170,

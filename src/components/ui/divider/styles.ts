@@ -9,6 +9,8 @@ export const styles = StyleSheet.create({
   textStyle: {
     marginHorizontal: 10,
     color: '#A5A5A5',
-    fontSize: 12,
+    fontSize: 13,
+    fontWeight: '500',
+    lineHeight: 16,
   },
 });

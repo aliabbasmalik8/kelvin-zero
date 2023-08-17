@@ -21,7 +21,9 @@ const BeneficiaryItem: FC<IBeneficiaryItem> = ({
             ]}>
             {beneficiaryItem.title}
           </Text>
-          <Text style={styles.dateText}>{beneficiaryItem.phone}</Text>
+          <Text style={[dark ? styles.dark : styles.light, styles.dateText]}>
+            {beneficiaryItem.phone}
+          </Text>
         </View>
       </View>
     </TouchableOpacity>

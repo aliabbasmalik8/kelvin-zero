@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
         paddingTop: 80,
       },
       android: {
-        paddingTop: 35,
+        paddingTop: 65,
       },
     }),
     paddingBottom: 20,

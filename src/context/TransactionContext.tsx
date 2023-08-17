@@ -22,6 +22,9 @@ export const TransactionProvider: FC<IWalletProvider> = ({children}) => {
   const [recentTransactions, setRecentTransactions] = useState([
     {id: 0, title: 'Paul Smith', icon: av1, phone: '0852-1283-1919'},
     {id: 1, title: 'John Mactavish', icon: av2, phone: '0852-1283-1919'},
+    {id: 2, title: 'Jasmin Toqi', icon: av3, phone: '0852-1283-1919'},
+    {id: 3, title: 'Mark Nolan', icon: av4, phone: '0852-1283-1919'},
+    {id: 4, title: 'Scott Martin', icon: av5, phone: '0852-1283-1919'},
   ]);
   const beneficiaries = [
     {id: 0, title: 'Paul Smith', icon: av1, phone: '0852-1283-1919'},

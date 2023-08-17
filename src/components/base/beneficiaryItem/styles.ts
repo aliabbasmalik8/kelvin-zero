@@ -29,10 +29,20 @@ export const styles = StyleSheet.create({
   dateText: {
     fontSize: 12,
     fontWeight: '400',
-    color: '#A5A5A5',
+
     lineHeight: 16,
   },
-  moneyText: {fontSize: 18, fontWeight: '500', lineHeight: 25},
+  light: {
+    color: '#A5A5A5',
+  },
+  dark: {
+    color: '#AAC0F8',
+  },
+  moneyText: {
+    fontSize: 16,
+    fontWeight: '500',
+    lineHeight: 22,
+  },
   green: {color: '#64C361'},
   red: {color: '#F54E4E'},
 });

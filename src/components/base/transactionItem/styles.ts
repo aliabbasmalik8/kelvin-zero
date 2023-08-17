@@ -25,7 +25,14 @@ export const styles = StyleSheet.create({
     color: '#A5A5A5',
     lineHeight: 16,
   },
+  moneyContainer: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    flexDirection: 'row',
+    alignItems: 'baseline',
+  },
   moneyText: {fontSize: 18, fontWeight: '500', lineHeight: 25},
+  decimalText: {fontSize: 16, fontWeight: '400'},
   green: {color: '#64C361'},
   red: {color: '#F54E4E'},
 });

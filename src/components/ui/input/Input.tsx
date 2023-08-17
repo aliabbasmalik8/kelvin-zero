@@ -17,6 +17,7 @@ const Input: FC<IInputProps> = ({
       inputStyle={styles.input}
       placeholder={placeholder}
       onChangeText={onChange}
+      placeholderTextColor="#787878"
       errorMessage={errorMessage}
       errorStyle={{fontSize: 14}}
     />
