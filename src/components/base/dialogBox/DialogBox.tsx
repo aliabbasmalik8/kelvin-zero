@@ -23,13 +23,15 @@ const DialogBox: FC<IDialogBoxProps> = ({
       overlayStyle={styles.dialogOverlayStyle}
       style={styles.dialogStyle}>
       <View>
-        <Dialog.Title title="Send Money" titleStyle={styles.dialogTitle} />
-        <Text style={styles.dialogBody}>
-          Are you sure you want to send{' '}
-          <Text style={styles.highlightedText}>
-            {integerPart} to {beneficiary}
+        <View style={styles.paddingTopContainer}>
+          <Dialog.Title title="Send Money" titleStyle={styles.dialogTitle} />
+          <Text style={styles.dialogBody}>
+            Are you sure you want to send{' '}
+            <Text style={styles.highlightedText}>
+              {integerPart} to {beneficiary}
+            </Text>
           </Text>
-        </Text>
+        </View>
         <Dialog.Actions>
           <View style={styles.dialogActionContainer}>
             <TouchableOpacity
@@ -37,7 +39,9 @@ const DialogBox: FC<IDialogBoxProps> = ({
               onPress={onPressCancel}>
               <Text style={styles.redButton}>Cancel</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.dialogButton} onPress={onPressOk}>
+            <TouchableOpacity
+              style={[styles.dialogButton, {borderLeftWidth: 1}]}
+              onPress={onPressOk}>
               <Text style={styles.blueButton}>Send</Text>
             </TouchableOpacity>
           </View>

@@ -1,14 +1,14 @@
 import {StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
   dialogStyle: {
-    paddingHorizontal: 16,
     paddingTop: 24,
-    borderRadius: 140,
-    width: 270,
+    padding: 0,
   },
   dialogOverlayStyle: {
     borderRadius: 14,
+    padding: 0,
   },
+  paddingTopContainer: {paddingTop: 24, paddingHorizontal: 13},
   dialogTitle: {
     fontSize: 20,
     fontWeight: '600',
@@ -34,13 +34,18 @@ export const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'space-between',
     flexDirection: 'row',
+    marginTop: 14,
   },
   dialogButton: {
-    height: 40,
+    // height: 40,
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     display: 'flex',
+    borderTopWidth: 1,
+    borderColor: '#F3F3F3',
+    paddingBottom: 15,
+    paddingTop: 6,
   },
   redButton: {
     color: '#F54E4E',
