@@ -5,6 +5,7 @@ import {Text} from '@src/components/ui/text';
 import {IDialogBoxProps} from './DialogBoxType';
 import {styles} from './styles';
 import {TouchableOpacity} from 'react-native';
+import {convertCurrency} from '@src/helpers/convertCurrency';
 const DialogBox: FC<IDialogBoxProps> = ({
   isVisible,
   toggleDialog,
@@ -13,6 +14,8 @@ const DialogBox: FC<IDialogBoxProps> = ({
   onPressOk,
   onPressCancel,
 }) => {
+  const formattedCurrency = convertCurrency(parseInt(amount));
+  const [integerPart] = formattedCurrency.split('.');
   return (
     <Dialog
       isVisible={isVisible}
@@ -24,7 +27,7 @@ const DialogBox: FC<IDialogBoxProps> = ({
         <Text style={styles.dialogBody}>
           Are you sure you want to send{' '}
           <Text style={styles.highlightedText}>
-            $ {amount} to {beneficiary}
+            {integerPart} to {beneficiary}
           </Text>
         </Text>
         <Dialog.Actions>

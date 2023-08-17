@@ -10,6 +10,7 @@ const useTransfer = ({navigation}: any) => {
   const [step, setStep] = useState(0);
   const [beneficiary, setBeneficiary] = useState<any>();
   const [isDialogVisible, setDialogVisible] = useState<boolean>(false);
+  const [inputValue, setInputValue] = useState('');
   const [amount, setAmount] = useState('');
   const {deductAmount, walletAmount} = useWallet();
   const {beneficiaries, recentTransactions, newTransaction} = useTransaction();
@@ -21,22 +22,28 @@ const useTransfer = ({navigation}: any) => {
     setDialogVisible(!isDialogVisible);
   };
   const sendMoney = () => {
-    setDialogVisible(true);
+    if (amount) {
+      setDialogVisible(true);
+    }
   };
 
   const handleAmountChange = (value: any) => {
     const numericText = value.replace(/[^0-9]/g, '');
+    const formattedAmount = numericText.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    setInputValue(`$${formattedAmount}`);
     setAmount(numericText);
   };
 
   const handleSendMoneyToBeneficiary = () => {
-    deductAmount(parseInt(amount));
-    newTransaction(beneficiary);
-    setDialogVisible(false);
-    if (parseInt(amount) < 4000) {
-      setStep(3);
-    } else {
-      setStep(2);
+    if (parseInt(amount) <= walletAmount) {
+      deductAmount(parseInt(amount));
+      newTransaction(beneficiary);
+      setDialogVisible(false);
+      if (parseInt(amount) < 4000) {
+        setStep(3);
+      } else {
+        setStep(2);
+      }
     }
   };
   const handleAddNewTransaction = (item: Beneficiary) => {
@@ -111,6 +118,7 @@ const useTransfer = ({navigation}: any) => {
     filteredData,
     recentTransactions,
     filteredRecentData,
+    inputValue,
     setDialogVisible,
     filterTransactionItems,
     handleAddNewTransaction,

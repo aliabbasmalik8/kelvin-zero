@@ -18,6 +18,6 @@ export const styles = StyleSheet.create({
     color: '#787878',
   },
   textArea: {
-    height: 170,
+    height: 117,
   },
 });

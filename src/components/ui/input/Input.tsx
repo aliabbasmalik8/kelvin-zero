@@ -9,16 +9,19 @@ const Input: FC<IInputProps> = ({
   textArea,
   onChange,
   errorMessage,
+  multiline,
 }) => {
   return (
     <RNEInput
       value={value}
       inputContainerStyle={[textArea && styles.textArea, styles.inputContainer]}
       inputStyle={styles.input}
+      multiline={multiline}
+      {...(multiline && {numberOfLines: 4})}
       placeholder={placeholder}
       onChangeText={onChange}
       placeholderTextColor="#787878"
-      errorMessage={errorMessage}
+      {...(errorMessage && {errorMessage})}
       errorStyle={{fontSize: 14}}
     />
   );

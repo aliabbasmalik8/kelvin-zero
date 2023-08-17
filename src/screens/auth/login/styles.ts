@@ -20,13 +20,14 @@ export const styles = StyleSheet.create({
     marginHorizontal: 9,
   },
   inputContainer: {
-    marginBottom: 10,
+    // marginBottom: 6,
   },
   mainText: {
     fontSize: 32,
     fontWeight: '600',
     marginBottom: 20,
     lineHeight: 43,
+    fontStyle: 'normal',
   },
   subText: {
     fontSize: 12,
@@ -42,7 +43,7 @@ export const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   checkBoxCont: {
-    marginTop: 14,
+    marginTop: 16,
   },
   dividerContainer: {
     marginTop: 118,
@@ -73,6 +74,8 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#A5A5A5',
     fontWeight: '500',
+    lineHeight: 16.5,
+    fontFamily: 'Poppins-Regular',
   },
   signUpTextCont: {
     display: 'flex',
@@ -91,6 +94,7 @@ export const styles = StyleSheet.create({
     color: '#1F1F1F',
     fontSize: 12,
     fontWeight: '500',
+    lineHeight: 17,
   },
   signupButton: {
     color: '#2A61EE',

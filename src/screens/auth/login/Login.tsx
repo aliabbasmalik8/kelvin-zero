@@ -62,10 +62,11 @@ const Login: FC<ILoginProps> = ({}) => {
       <View style={styles.loginContainer}>
         <View style={styles.inputContainer}>
           <Input
-            placeholder={'Email or Phone No.'}
+            placeholder={'Email or Phone Number'}
             value={email}
             onChange={handleEmailChange}
             errorMessage={errorMessage}
+            multiline={false}
           />
         </View>
         <Button
@@ -112,7 +113,7 @@ const Login: FC<ILoginProps> = ({}) => {
                 Login with {'\n'} Multi-Pass
               </Text>
               <Text style={styles.bottomSheetSubText}>
-                Tap You card to validate{'\n'} the transaction
+                Tap your card to validate{'\n'} the transaction
               </Text>
             </View>
           </View>
@@ -121,7 +122,7 @@ const Login: FC<ILoginProps> = ({}) => {
           <View style={styles.bottomSheetContainer}>
             <Image style={styles.image} source={LockImage} />
             <View style={styles.bottomSheetTextCont}>
-              <Text style={styles.bottomSheetmainText}>Login Successful</Text>
+              <Text style={styles.bottomSheetmainText}>Login Successful!</Text>
               <Text style={styles.bottomSheetSubText}>
                 Transaction Approved
               </Text>
