@@ -41,4 +41,28 @@ export const styles = StyleSheet.create({
     width: 40,
     height: 40,
   },
+  dropdown: {
+    position: 'absolute',
+    top: 110,
+    left: 5,
+    backgroundColor: '#414185',
+    padding: 6,
+    borderRadius: 5,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+
+  logoutButton: {
+    padding: 10,
+  },
+
+  logoutButtonText: {
+    color: 'white',
+  },
 });

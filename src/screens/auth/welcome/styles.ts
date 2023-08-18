@@ -54,6 +54,7 @@ export const styles = StyleSheet.create({
   mainText: {
     fontSize: 36,
     fontWeight: '700',
+    // fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 8,
     width: '70%',

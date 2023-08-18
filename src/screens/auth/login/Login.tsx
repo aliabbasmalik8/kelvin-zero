@@ -94,8 +94,9 @@ const Login: FC<ILoginProps> = ({}) => {
         <Text style={styles.bottomMainText}>
           By logging, you agree to our{'\n'}
           <Text style={styles.highlightedText}>
-            Terms and Condition
-          </Text> and <Text style={styles.highlightedText}>Privacy Policy</Text>
+            Terms & Conditions
+          </Text> and{' '}
+          <Text style={styles.highlightedText}>Privacy Policy{'.'}</Text>
         </Text>
         <View style={styles.signUpTextCont}>
           <Text style={styles.signUpText}>Already have an account?</Text>

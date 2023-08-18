@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 
 export const styles = StyleSheet.create({
   containerStyle: {
@@ -15,6 +15,8 @@ export const styles = StyleSheet.create({
   },
   backdropStyle: {
     backgroundColor: '#1B1B1B',
+    height: Dimensions.get('screen').height,
     opacity: 0.3,
+    flex: 1,
   },
 });

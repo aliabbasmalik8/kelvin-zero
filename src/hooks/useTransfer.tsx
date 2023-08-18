@@ -36,10 +36,10 @@ const useTransfer = ({navigation}: any) => {
 
   const handleSendMoneyToBeneficiary = () => {
     if (parseInt(amount) <= walletAmount) {
-      deductAmount(parseInt(amount));
       newTransaction(beneficiary);
       setDialogVisible(false);
       if (parseInt(amount) < 4000) {
+        deductAmount(parseInt(amount));
         setStep(3);
       } else {
         setStep(2);
@@ -103,8 +103,11 @@ const useTransfer = ({navigation}: any) => {
     if (step === 2) {
       setTimeout(() => {
         setStep(3);
+        deductAmount(parseInt(amount));
+        setAmount('0');
       }, 5000);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [step]);
 
   return {
