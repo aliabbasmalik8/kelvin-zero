@@ -5,7 +5,7 @@ import {ITextProps} from './TextType';
 import {styles} from './styles';
 
 const Text: FC<ITextProps> = ({children, style}) => {
-  const combinedStyle = [style, styles.textStyle];
+  const combinedStyle = [styles.textStyle, style];
   return <RNEText style={combinedStyle}>{children}</RNEText>;
 };
 

@@ -17,7 +17,7 @@ const Input: FC<IInputProps> = ({
       inputContainerStyle={[textArea && styles.textArea, styles.inputContainer]}
       inputStyle={styles.input}
       multiline={multiline}
-      {...(multiline && {numberOfLines: 4})}
+      // {...(multiline && {numberOfLines: 4})}
       placeholder={placeholder}
       onChangeText={onChange}
       placeholderTextColor="#787878"

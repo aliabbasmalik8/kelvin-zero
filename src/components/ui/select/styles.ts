@@ -13,5 +13,6 @@ export const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'flex-start',
     alignItems: 'center',
+    fontFamily: 'Poppins-Regular',
   },
 });

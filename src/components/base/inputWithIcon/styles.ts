@@ -10,14 +10,12 @@ export const styles = StyleSheet.create({
     paddingVertical: 7,
     fontSize: 14,
     height: 60,
-    fontFamily: 'Poppins-Regular',
-    fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
   },
   input: {
     fontSize: 14,
     color: 'white',
     marginLeft: 12,
-    fontWeight: '500',
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Poppins-Medium',
   },
 });

@@ -16,8 +16,7 @@ const Checkbox: FC<ICheckboxProps> = ({title}) => {
         style: {
           color: '#A5A5A5',
           fontSize: 12,
-          fontFamily: 'Poppins-Regular',
-          fontWeight: '500',
+          fontFamily: 'Poppins-Medium',
         },
       }}
       title={title}

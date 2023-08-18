@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
   buttonStyles: {
     paddingVertical: 14,
     borderRadius: 50,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     backgroundColor: '#414185',
   },
   containerStyle: {

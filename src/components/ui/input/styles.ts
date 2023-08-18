@@ -15,9 +15,11 @@ export const styles = StyleSheet.create({
   },
   input: {
     fontSize: 14,
+    fontFamily: 'Poppins-Regular',
     color: '#787878',
   },
   textArea: {
     height: 117,
+    fontFamily: 'Poppins-Regular',
   },
 });

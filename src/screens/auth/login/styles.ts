@@ -28,6 +28,7 @@ export const styles = StyleSheet.create({
     marginBottom: 20,
     lineHeight: 43,
     fontStyle: 'normal',
+    fontFamily: 'Poppins-SemiBold',
   },
   subText: {
     fontSize: 12,
@@ -35,6 +36,7 @@ export const styles = StyleSheet.create({
     color: '#A5A5A5',
     lineHeight: 16,
     width: '96%',
+    fontFamily: 'Poppins-Regular',
   },
   loginContainer: {
     marginTop: 30,
@@ -75,7 +77,7 @@ export const styles = StyleSheet.create({
     color: '#A5A5A5',
     fontWeight: '500',
     lineHeight: 16.5,
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Poppins-Medium',
   },
   signUpTextCont: {
     display: 'flex',
@@ -84,23 +86,27 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 24,
     paddingBottom: 100,
+    fontFamily: 'Poppins-Regular',
   },
   signUpText: {
     color: '#1F1F1F',
     fontSize: 12,
     fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
   },
   highlightedText: {
     color: '#1F1F1F',
     fontSize: 12,
     fontWeight: '500',
     lineHeight: 17,
+    fontFamily: 'Poppins-Medium',
   },
   signupButton: {
     color: '#2A61EE',
     marginLeft: 5,
     fontWeight: '600',
     fontSize: 12,
+    fontFamily: 'Poppins-SemiBold',
   },
   bottomSheetContainer: {
     display: 'flex',
@@ -118,12 +124,14 @@ export const styles = StyleSheet.create({
     lineHeight: 43,
     textAlign: 'center',
     color: '#1F1F1F',
+    fontFamily: 'Poppins-Medium',
   },
   bottomSheetSubText: {
     fontSize: 12,
     color: '#A5A5A5',
     lineHeight: 16,
     textAlign: 'center',
+    fontFamily: 'Poppins-Regular',
   },
   image: {
     width: 264,
