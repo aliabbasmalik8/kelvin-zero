@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
   marginLeft: {marginLeft: 12},
   mainText: {
     fontSize: 16,
-    fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
     color: '#1F1F1F',
     lineHeight: 22,
   },
@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
 
   dateText: {
     fontSize: 12,
-    fontWeight: '400',
+    fontFamily: 'Poppins-Regular',
 
     lineHeight: 16,
   },
@@ -40,7 +40,7 @@ export const styles = StyleSheet.create({
   },
   moneyText: {
     fontSize: 16,
-    fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
     lineHeight: 22,
   },
   green: {color: '#64C361'},

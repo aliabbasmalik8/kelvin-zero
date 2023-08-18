@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     marginHorizontal: 10,
     color: '#A5A5A5',
     fontSize: 13,
-    fontWeight: '500',
     lineHeight: 16,
+    fontFamily: 'Poppins-Medium',
   },
 });

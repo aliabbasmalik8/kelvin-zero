@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
   mainText: {
     color: 'white',
     fontSize: 18,
-    fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
     lineHeight: 25,
   },
   backButton: {

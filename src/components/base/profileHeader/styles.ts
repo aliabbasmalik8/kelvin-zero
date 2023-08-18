@@ -30,12 +30,14 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '500',
     lineHeight: 25,
+    fontFamily: 'Poppins-Medium',
   },
   emailText: {
     color: '#AAC0F8',
     marginTop: 2,
     fontSize: 12,
     lineHeight: 16,
+    fontFamily: 'Poppins-Regular',
   },
   notificationButton: {
     width: 40,
@@ -64,5 +66,6 @@ export const styles = StyleSheet.create({
 
   logoutButtonText: {
     color: 'white',
+    fontFamily: 'Poppins-Medium',
   },
 });

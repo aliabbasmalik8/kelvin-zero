@@ -13,6 +13,7 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '600',
     color: '#1F1F1F',
+    fontFamily: 'Poppins-SemiBold',
     textAlign: 'center',
   },
   dialogBody: {
@@ -24,10 +25,11 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
     color: '#A5A5A5',
     lineHeight: 22,
+    fontFamily: 'Poppins-Regular',
   },
   highlightedText: {
     color: '#242458',
-    fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
   },
   dialogActionContainer: {
     width: '100%',
@@ -51,14 +53,12 @@ export const styles = StyleSheet.create({
     color: '#F54E4E',
     fontSize: 14,
     paddingTop: 12,
-    fontWeight: '500',
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Poppins-Medium',
   },
   blueButton: {
     color: '#2A61EE',
     paddingTop: 12,
     fontSize: 14,
-    fontWeight: '500',
-    fontFamily: 'Poppins-Regular',
+    fontFamily: 'Poppins-Medium',
   },
 });

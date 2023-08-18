@@ -20,16 +20,18 @@ export const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '500',
     lineHeight: 16,
+    fontFamily: 'Poppins-Medium',
   },
   walletAmount: {
     color: 'white',
     fontSize: 48,
     fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
   },
   walletAmountDecimal: {
     color: 'white',
     fontSize: 24,
-    fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
   },
   iconsContainer: {
     display: 'flex',
@@ -53,12 +55,12 @@ export const styles = StyleSheet.create({
     color: 'white',
     fontSize: 12,
     marginTop: 8,
-    fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
   },
   seeAllButton: {
     color: '#2A61EE',
     fontSize: 14,
-    fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
   },
   flexContainer: {
     display: 'flex',
@@ -68,8 +70,8 @@ export const styles = StyleSheet.create({
   },
   transactionText: {
     fontSize: 24,
-    fontWeight: 'bold',
     color: '#1F1F1F',
+    fontFamily: 'Poppins-SemiBold',
   },
   padding: {
     paddingBottom: 200,

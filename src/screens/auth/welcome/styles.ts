@@ -53,8 +53,7 @@ export const styles = StyleSheet.create({
   },
   mainText: {
     fontSize: 36,
-    fontWeight: '700',
-    // fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     textAlign: 'center',
     marginBottom: 8,
     width: '70%',
@@ -64,7 +63,7 @@ export const styles = StyleSheet.create({
   subText: {
     fontSize: 12,
     marginBottom: 21,
-    width: '90%',
+    width: '88%',
     textAlign: 'center',
     color: '#A5A5A5',
     lineHeight: 16,
