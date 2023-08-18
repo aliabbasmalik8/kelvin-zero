@@ -140,7 +140,8 @@ export const styles = StyleSheet.create({
     height: 73,
   },
   sendButton: {
-    marginTop: 136,
+    marginTop: 126,
+    marginBottom: 50,
   },
   bankAccountContainerStyle: {
     paddingBottom: 50,

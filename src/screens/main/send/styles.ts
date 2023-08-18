@@ -133,7 +133,8 @@ export const styles = StyleSheet.create({
     marginTop: 70,
   },
   sendButton: {
-    marginTop: 136,
+    marginTop: 126,
+    marginBottom: 50,
   },
   transfersBanner: {
     paddingBottom: 50,
