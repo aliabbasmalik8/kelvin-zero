@@ -82,7 +82,7 @@ const SendToBank = ({navigation}: any) => {
             <Text style={styles.transactionText}>Bank Account</Text>
             <Select />
           </View>
-          <ScrollView>
+          <ScrollView contentContainerStyle={styles.bankAccountContainerStyle}>
             {filteredData.map((item, index) => (
               <BeneficiaryItem
                 dark={false}

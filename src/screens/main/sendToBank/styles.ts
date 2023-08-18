@@ -142,4 +142,7 @@ export const styles = StyleSheet.create({
   sendButton: {
     marginTop: 136,
   },
+  bankAccountContainerStyle: {
+    paddingBottom: 50,
+  },
 });

@@ -2,7 +2,6 @@ import React, {FC} from 'react';
 import {BottomSheet as RNEBottomSheet} from '@rneui/themed';
 import {IBottomSheetProps} from './BottomSheetType';
 import {styles} from './styles';
-import {StatusBar} from 'react-native';
 const BottomSheet: FC<IBottomSheetProps> = ({children, isVisible, onClose}) => {
   return (
     <RNEBottomSheet
@@ -10,7 +9,6 @@ const BottomSheet: FC<IBottomSheetProps> = ({children, isVisible, onClose}) => {
       isVisible={isVisible}
       onBackdropPress={onClose}
       backdropStyle={styles.backdropStyle}>
-      {/* <StatusBar hidden /> */}
       {children}
     </RNEBottomSheet>
   );

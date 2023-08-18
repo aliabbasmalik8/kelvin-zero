@@ -108,7 +108,10 @@ const Login: FC<ILoginProps> = ({}) => {
       <BottomSheet isVisible={isVisble} onClose={() => setIsVisible(false)}>
         {!isLoggedIn && (
           <View style={styles.bottomSheetContainer}>
-            <Image style={styles.image} source={Multipass} />
+            <Image
+              style={[styles.image, styles.loginImage]}
+              source={Multipass}
+            />
             <View style={styles.bottomSheetTextCont}>
               <Text style={styles.bottomSheetmainText}>
                 Login with {'\n'} Multi-Pass
@@ -120,23 +123,31 @@ const Login: FC<ILoginProps> = ({}) => {
           </View>
         )}
         {isLoggedIn && (
-          <View style={styles.bottomSheetContainer}>
+          <View style={[styles.bottomSheetContainer, styles.loginSuccessful]}>
             <Image style={styles.image} source={LockImage} />
             <View style={styles.bottomSheetTextCont}>
-              <Text style={styles.bottomSheetmainText}>Login Successful!</Text>
+              <Text
+                style={[
+                  styles.bottomSheetmainText,
+                  styles.loginSuccessfulText,
+                ]}>
+                Login Successful!
+              </Text>
               <Text style={styles.bottomSheetSubText}>
                 Transaction Approved
               </Text>
             </View>
-            <Button
-              title="Back to Home"
-              style={styles.backToHomeButton}
-              onPress={() => {
-                setIsVisible(false);
-                setIsLoggedIn(false);
-                handleLogin();
-              }}
-            />
+            <View style={styles.buttonContainer}>
+              <Button
+                title="Back to Home"
+                style={styles.backToHomeButton}
+                onPress={() => {
+                  setIsVisible(false);
+                  setIsLoggedIn(false);
+                  handleLogin();
+                }}
+              />
+            </View>
           </View>
         )}
       </BottomSheet>

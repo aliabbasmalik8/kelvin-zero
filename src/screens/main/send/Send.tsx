@@ -88,7 +88,7 @@ const Send = ({navigation}: any) => {
           <View style={styles.flexContainer}>
             <Text style={styles.transactionText}>Recent Transfers</Text>
           </View>
-          <ScrollView>
+          <ScrollView contentContainerStyle={styles.transfersBanner}>
             {filteredRecentData?.map((item, index) => (
               <BeneficiaryItem
                 dark={false}

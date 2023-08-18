@@ -135,4 +135,7 @@ export const styles = StyleSheet.create({
   sendButton: {
     marginTop: 136,
   },
+  transfersBanner: {
+    paddingBottom: 50,
+  },
 });

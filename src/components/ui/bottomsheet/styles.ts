@@ -3,9 +3,7 @@ import {StyleSheet, Dimensions} from 'react-native';
 export const styles = StyleSheet.create({
   containerStyle: {
     backgroundColor: '#ffffff',
-    height: 506,
-    padding: 27,
-    maxHeight: 506,
+    // maxHeight: 476,
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
     position: 'absolute',

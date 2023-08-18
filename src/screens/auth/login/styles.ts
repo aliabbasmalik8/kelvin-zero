@@ -112,19 +112,21 @@ export const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    height: 470,
+    marginTop: 27,
+    paddingBottom: 82,
   },
-  bottomSheetTextCont: {
-    width: '80%',
-  },
+  bottomSheetTextCont: {},
   bottomSheetmainText: {
     fontSize: 24,
     fontWeight: '500',
     marginBottom: 8,
-    lineHeight: 43,
+    marginTop: -25,
     textAlign: 'center',
     color: '#1F1F1F',
     fontFamily: 'Poppins-Medium',
+  },
+  loginSuccessfulText: {
+    marginTop: 0,
   },
   bottomSheetSubText: {
     fontSize: 12,
@@ -137,8 +139,18 @@ export const styles = StyleSheet.create({
     width: 264,
     height: 256,
   },
+  loginImage: {
+    marginLeft: 20,
+  },
   backToHomeButton: {
     width: '100%',
     marginTop: 50,
+  },
+  loginSuccessful: {
+    paddingBottom: 32,
+  },
+  buttonContainer: {
+    width: '100%',
+    paddingHorizontal: 24,
   },
 });
