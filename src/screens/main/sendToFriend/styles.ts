@@ -9,6 +9,10 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 12,
   },
+  iconImage: {
+    height: 53,
+    width: 53,
+  },
   titleText: {
     color: 'white',
     fontSize: 12,

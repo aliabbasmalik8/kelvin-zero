@@ -12,6 +12,10 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
+  imageIcon: {
+    width: 40,
+    height: 40,
+  },
   marginLeft: {marginLeft: 12},
   mainText: {
     fontSize: 16,

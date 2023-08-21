@@ -12,7 +12,7 @@ const BeneficiaryItem: FC<IBeneficiaryItem> = ({
   return (
     <TouchableOpacity style={styles.mainContainer} onPress={onPress}>
       <View style={styles.subContainer}>
-        <Image source={beneficiaryItem.icon} />
+        <Image style={styles.imageIcon} source={beneficiaryItem.icon} />
         <View style={styles.marginLeft}>
           <Text
             style={[

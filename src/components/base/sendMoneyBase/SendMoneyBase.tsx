@@ -1,4 +1,4 @@
-import {KeyboardAvoidingView, View, Platform} from 'react-native';
+import {KeyboardAvoidingView, View} from 'react-native';
 import React, {FC} from 'react';
 import {styles} from './styles';
 import {Input as RNEInput} from '@rneui/themed';
@@ -14,9 +14,7 @@ const SendMoneyBase: FC<ISendMoneyBaseProps> = ({
 }) => {
   return (
     <BottomBase>
-      <KeyboardAvoidingView
-        behavior={Platform.OS === 'ios' ? 'padding' : 'height'} // Use padding for iOS and height for Android
-        style={styles.sendContainer}>
+      <KeyboardAvoidingView style={styles.sendContainer}>
         <View>
           <RNEInput
             placeholder="$"
@@ -29,7 +27,7 @@ const SendMoneyBase: FC<ISendMoneyBaseProps> = ({
             keyboardType="numeric"
           />
           <Input
-            placeholder="Write your note here"
+            placeholder="Write your note here..."
             textArea={true}
             multiline={true}
           />

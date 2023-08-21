@@ -66,7 +66,7 @@ const SendToFriend: FC<ISendToFriendProps> = ({navigation}) => {
                   setStep(1);
                   setBeneficiary(item);
                 }}>
-                <Image source={item.icon} />
+                <Image style={styles.iconImage} source={item.icon} />
                 <Text style={styles.titleText}>{formatTitle(item.title)}</Text>
               </TouchableOpacity>
             ))}
