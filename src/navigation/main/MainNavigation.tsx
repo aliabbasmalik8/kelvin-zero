@@ -9,6 +9,7 @@ import {CustomHeader} from '@src/components/base/customHeader';
 
 import {SendToBank} from '@src/screens/main/sendToBank';
 import {SendToFriend} from '@src/screens/main/sendToFriend';
+import Scan from '@src/screens/main/scan/Scan';
 
 const Stack = createNativeStackNavigator();
 const MainNavigation = () => {
@@ -46,6 +47,11 @@ const MainNavigation = () => {
         <Stack.Screen
           name="Send To Friend"
           component={SendToFriend}
+          options={{header: props => <CustomHeader {...props} />}}
+        />
+        <Stack.Screen
+          name="Scan"
+          component={Scan}
           options={{header: props => <CustomHeader {...props} />}}
         />
       </Stack.Navigator>

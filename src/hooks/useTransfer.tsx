@@ -72,7 +72,7 @@ const useTransfer = ({navigation}: any) => {
       title: 'Scan',
       icon: <ScanIcon />,
       onPress: () => {
-        navigation.navigate('Send');
+        navigation.navigate('Scan');
       },
     },
   ];

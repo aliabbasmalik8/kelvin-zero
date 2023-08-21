@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
         paddingTop: 85,
       },
     }),
-    paddingBottom: 20,
+    paddingBottom: 30,
     paddingHorizontal: 18,
   },
   inlineContainer: {
