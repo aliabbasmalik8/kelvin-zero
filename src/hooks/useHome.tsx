@@ -7,8 +7,9 @@ import Figma from '@src/assets/Figma.png';
 import Paypal from '@src/assets/Paypal.png';
 import Dribble from '@src/assets/Dribble.png';
 import Envato from '@src/assets/Envato.png';
+import {ISendProps} from '@src/screens/main/send/SendType';
 
-const useHome = ({navigation}: any) => {
+const useHome = ({navigation}: ISendProps) => {
   const transactionData = [
     {
       id: 0,
@@ -69,7 +70,7 @@ const useHome = ({navigation}: any) => {
       title: 'Scan',
       icon: <ScanIcon />,
       onPress: () => {
-        navigation.navigate('Send');
+        navigation.navigate('Scan');
       },
     },
   ];

@@ -1,13 +1,13 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-  mainContainer: {backgroundColor: '#242458', height: '100%'},
+  mainContainer: {backgroundColor: '#242458', height: '100%', flex: 1},
   topContainer: {
     width: '100%',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 22,
+    marginTop: 12,
   },
   iconsContainer: {
     display: 'flex',
@@ -27,116 +27,10 @@ export const styles = StyleSheet.create({
     width: 73,
     height: 73,
   },
-  amountContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    marginTop: 8,
-    alignItems: 'baseline',
-  },
-  walletText: {
-    color: 'white',
-    fontSize: 12,
-    fontFamily: 'Poppins-Medium',
-    lineHeight: 16,
-  },
-  walletAmount: {
-    color: 'white',
-    fontSize: 48,
-    fontFamily: 'Poppins-Medium',
-  },
-  walletAmountDecimal: {
-    color: 'white',
-    fontSize: 24,
-    fontFamily: 'Poppins-Medium',
-  },
   iconText: {
     color: 'white',
     fontSize: 12,
     marginTop: 8,
     fontFamily: 'Poppins-Medium',
-  },
-  flexContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  transactionText: {
-    fontSize: 24,
-    fontFamily: 'Poppins-SemiBold',
-
-    color: '#1F1F1F',
-  },
-  editButton: {
-    display: 'flex',
-    padding: 14,
-    paddingHorizontal: 24,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#414185',
-    borderRadius: 12,
-    marginTop: 20,
-  },
-  editButtonText: {
-    color: 'white',
-    fontSize: 14,
-    fontWeight: '500',
-    fontFamily: 'Poppins-Medium',
-  },
-  sendContainer: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    height: '65%',
-  },
-  amountInput: {
-    paddingTop: 20,
-    margin: 10,
-    display: 'flex',
-    alignItems: 'center',
-    textAlign: 'center',
-    justifyContent: 'center',
-  },
-  amountInputStyle: {
-    fontSize: 24,
-    fontFamily: 'Poppins-Medium',
-  },
-  bottomSheetContainer: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-    height: 470,
-  },
-  bottomSheetTextCont: {
-    width: '80%',
-  },
-  bottomSheetmainText: {
-    fontSize: 24,
-    fontFamily: 'Poppins-Medium',
-    marginBottom: 8,
-    lineHeight: 43,
-    textAlign: 'center',
-    color: '#1F1F1F',
-  },
-  bottomSheetSubText: {
-    fontSize: 12,
-    color: '#A5A5A5',
-    lineHeight: 16,
-    fontFamily: 'Poppins-Regular',
-    textAlign: 'center',
-  },
-  image: {
-    width: 264,
-    height: 256,
-  },
-  backToHomeButton: {
-    width: '100%',
-    marginTop: 70,
-  },
-  sendButton: {
-    marginTop: 126,
-    marginBottom: 50,
-  },
-  transfersBanner: {
-    paddingBottom: 50,
   },
 });
