@@ -45,7 +45,7 @@ export const styles = StyleSheet.create({
   },
   dropdown: {
     position: 'absolute',
-    top: 110,
+    top: Dimensions.get('screen').height > 750 ? 110 : 90,
     left: 5,
     backgroundColor: '#414185',
     padding: 6,
