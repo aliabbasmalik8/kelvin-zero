@@ -70,6 +70,7 @@ export const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    marginBottom: 40,
   },
   bottomMainText: {
     fontSize: 12,

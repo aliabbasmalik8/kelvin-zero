@@ -1,14 +1,14 @@
-import {StyleSheet} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   sendContainer: {
     display: 'flex',
     justifyContent: 'space-between',
-    height: '65%',
-    flex: 1,
+    height: Dimensions.get('window').height - 120,
+    marginBottom: 100,
   },
   amountInput: {
-    paddingTop: 20,
+    paddingTop: '3%',
     margin: 10,
     display: 'flex',
     alignItems: 'center',
@@ -21,7 +21,6 @@ export const styles = StyleSheet.create({
   },
 
   sendButton: {
-    marginTop: 126,
-    marginBottom: 50,
+    paddingBottom: 300,
   },
 });
