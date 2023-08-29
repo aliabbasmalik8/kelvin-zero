@@ -31,7 +31,7 @@ export const styles = StyleSheet.create({
   addButtonContainer: {
     position: 'absolute',
     right: 20,
-    bottom: 50,
+    bottom: 165,
   },
   addButton: {
     width: 73,

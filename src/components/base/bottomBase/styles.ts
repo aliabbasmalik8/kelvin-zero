@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
     marginTop: 24,
     paddingHorizontal: 18,
     paddingTop: 24,
-    paddingBottom: 50,
+    paddingBottom: 250,
+    overflow: 'scroll',
   },
 });

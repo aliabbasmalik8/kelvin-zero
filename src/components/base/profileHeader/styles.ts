@@ -1,4 +1,4 @@
-import {StyleSheet, Platform} from 'react-native';
+import {StyleSheet, Platform, Dimensions} from 'react-native';
 export const styles = StyleSheet.create({
   headerContainer: {
     flexDirection: 'row',
@@ -7,10 +7,10 @@ export const styles = StyleSheet.create({
     backgroundColor: '#242458',
     ...Platform.select({
       ios: {
-        paddingTop: 65,
+        paddingTop: Dimensions.get('screen').height > 750 ? 65 : 45,
       },
       android: {
-        paddingTop: 55,
+        paddingTop: Dimensions.get('screen').height > 750 ? 55 : 40,
       },
     }),
     paddingBottom: 20,
@@ -45,7 +45,7 @@ export const styles = StyleSheet.create({
   },
   dropdown: {
     position: 'absolute',
-    top: 110,
+    top: Dimensions.get('screen').height > 750 ? 110 : 90,
     left: 5,
     backgroundColor: '#414185',
     padding: 6,
